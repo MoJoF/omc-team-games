@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="shortcut icon" href="icon.png" type="image/png">
 
-    <title>UNDER A STAR CALLED SUN</title>
-    <!-- <script src="/hacks/avatar-by-room.js"></script> -->
-    <script src="/hacks/dialog-choices.js"></script>
-    <!-- <script src="/hacks/directional-avatar.js"></script> -->
-    <!-- <script src="/hacks/exit-from-dialog.js"></script> -->
-    <!-- <script src="/hacks/transparent-sprites.js"></script> -->
+<!DOCTYPE HTML>
+<html>
+
+<!-- HEADER -->
+<head>
+
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="icon.png" type="image/png">
+<title>UNDER A STAR CALLED SUN</title>
 
 <script type="text/bitsyGameData" id="exportedGameData">
 
@@ -25536,7 +25534,7 @@ NAME ending 1
 
 DLG j
 """
-i wake up11
+я проснулся.
 the sun gently caresses my face
 and for a second
 i believe im back on earth
@@ -27362,11 +27360,7 @@ var Environment = function() {
 	functionMap.set("pg", pagebreakFunc);
 	functionMap.set("property", propertyFunc);
 
-	
-functionMap.set("exitNow", kitsy.dialogFunctions["exitNow"]);
-
-functionMap.set("exit", function(e, p, o){ kitsy.deferredDialogFunctions["exit"].push({e:e,p:p}); o(null); });
-this.HasFunction = function(name) { return functionMap.has(name); };
+	this.HasFunction = function(name) { return functionMap.has(name); };
 	this.EvalFunction = function(name,parameters,onReturn,env) {
 		if (env == undefined || env == null) {
 			env = this;
@@ -28039,59 +28033,6 @@ var CycleNode = function(options) {
 	}
 }
 
-
-var ChoiceNode = function(options) {
-	Object.assign( this, new TreeRelationship() );
-	Object.assign( this, new SequenceBase() );
-	this.type = "choice";
-	this.options = options;
-	options.forEach(function(option){
-		var br = option.children.find(function(child){ return child.name === 'br'; });
-		if (!br) {
-			option.onSelect = [];
-			return;
-		}
-		var idx = option.children.indexOf(br);
-		option.onSelect = option.children.slice(idx+1);
-		option.children = option.children.slice(0, idx);
-	});
-
-	this.Eval = function(environment,onReturn) {
-		var lastVal = null;
-		var i = 0;
-		function evalChildren(children,done) {
-			if(i < children.length) {
-				children[i].Eval(environment, function(val) {
-					if (i === children.length - 1) {
-						environment.GetDialogBuffer().AddParagraphBreak();
-					} else {
-						environment.GetDialogBuffer().AddLinebreak();
-					}
-					lastVal = val;
-					i++;
-					evalChildren(children,done);
-				});
-			}
-			else {
-				done();
-				window.dialogChoices.choicesActive = true;
-			}
-		}
-		window.dialogChoices.choices = this.options.map(function(option){
-			return function(){
-				option.onSelect.forEach(function(child){
-					child.Eval(environment, function(){});
-				});
-			};
-		});
-		if (environment.GetDialogBuffer().CurCharCount() > 0) {
-			environment.GetDialogBuffer().AddParagraphBreak();
-		}
-		evalChildren(this.options, function () {
-			onReturn(lastVal);
-		});
-	}
-}
 var ShuffleNode = function(options) {
 	Object.assign(this, new TreeRelationship());
 	Object.assign(this, new SequenceBase());
@@ -28633,7 +28574,7 @@ var Parser = function(env) {
 
 	function IsSequence(str) {
 		// console.log("IsSequence? " + str);
-		return str === "sequence" || str === "cycle" || str === "shuffle" || str === "choice";
+		return str === "sequence" || str === "cycle" || str === "shuffle";
 	}
 
 	/*
@@ -28751,9 +28692,6 @@ var Parser = function(env) {
 		else if (sequenceType === "shuffle") {
 			state.curNode.AddChild(new ShuffleNode(options));
 		}
-else if(sequenceType === "choice") {
-	state.curNode.AddChild(new ChoiceNode(options));
-}
 
 		return state;
 	}
@@ -29154,39 +29092,7 @@ var DialogRenderer = function() {
 		0,0,0,0,1,
 		0,0,0,1,0
 	];
-	
-this.DrawChoiceArrow = function() {
-	var rows = [
-		[0, 0, 0, 0, 0, 0, 0, 0],
-		[0, 0, 0, 0, 0, 0, 0, 0],
-		[0, 1, 0, 0, 0, 0, 0, 0],
-		[0, 1, 1, 0, 0, 0, 0, 0],
-		[0, 1, 1, 1, 0, 0, 0, 0],
-		[0, 1, 1, 0, 0, 0, 0, 0],
-		[0, 1, 0, 0, 0, 0, 0, 0],
-		[0, 0, 0, 0, 0, 0, 0, 0]
-	];
-	var top = (1 + window.dialogChoices.choice * (textboxInfo.padding_vert + relativeFontHeight())) * scale;
-	var left = 0*scale;
-	for (var y = 0; y < rows.length; y++) {
-		var cols = rows[y];
-		for (var x = 0; x < cols.length; x++) {
-			if (cols[x]) {
-				//scaling nonsense
-				for (var sy = 0; sy < 4; sy++) {
-					for (var sx = 0; sx < 4; sx++) {
-						var pxl = 4 * ( ((top+(y*4)+sy) * (textboxInfo.width*scale)) + (left+(x*4)+sx) );
-						textboxInfo.img.data[pxl+0] = 255;
-						textboxInfo.img.data[pxl+1] = 255;
-						textboxInfo.img.data[pxl+2] = 255;
-						textboxInfo.img.data[pxl+3] = 255;
-					}
-				}
-			}
-		}
-	}
-};
-this.DrawNextArrow = function() {
+	this.DrawNextArrow = function() {
 		// console.log("draw arrow!");
 		var top = (textboxInfo.height-5) * scale;
 		var left = (textboxInfo.width-(5+4)) * scale;
@@ -29281,11 +29187,7 @@ this.DrawNextArrow = function() {
 			this.DrawNextArrow();
 		}
 
-		
-if (window.dialogChoices.choicesActive) {
-	this.DrawChoiceArrow();
-}
-this.DrawTextbox();
+		this.DrawTextbox();
 
 		if (buffer.DidPageFinishThisFrame() && onPageFinish != null) {
 			onPageFinish();
@@ -29500,11 +29402,7 @@ var DialogBuffer = function() {
 		}
 	}
 
-	this.CanContinue = function() {
-if(window.dialogChoices.choicesActive){
-	return false;
-}
- return isDialogReadyToContinue; };
+	this.CanContinue = function() { return isDialogReadyToContinue; };
 
 	function DialogChar(effectList) {
 		this.effectList = effectList.slice(); // clone effect list (since it can change between chars)
@@ -29788,8 +29686,7 @@ if(window.dialogChoices.choicesActive){
 		isActive = true;
 	};
 
-	this.AddParagraphBreak = function() { buffer.push( [[]] ); isActive = true; };
-this.AddLinebreak = function() {
+	this.AddLinebreak = function() {
 		var lastPage = buffer[buffer.length-1];
 		if (lastPage.length <= 1) {
 			// console.log("LINEBREAK - NEW ROW ");
@@ -30763,9 +30660,6 @@ function update() {
 
 function updateInput() {
 	if( dialogBuffer.IsActive() ) {
-if(window.dialogChoices.handleInput(dialogBuffer)) {
-	return;
-} else 
 		if (input.anyKeyPressed() || input.isTapReleased()) {
 			/* CONTINUE DIALOG */
 			if (dialogBuffer.CanContinue()) {
@@ -47448,15 +47342,16 @@ function getExitParams(parameters) {
 
 </head>
 
+
 <!-- DOCUMENT BODY -->
-<body onload="startExportedGame()">
-	
+<body onload='startExportedGame()'>
+	<body onload='startExportedGame()'>
 	<audio loop="loop" autoplay="autoplay">
- 			<source src="music.ogg">
+ 			<source src="music.wav">
  	</audio>
 	<!-- GAME CANVAS -->
-	<canvas id="game" width="512" height="512"></canvas>
+	<canvas id='game'></canvas>
+</body>
 
 
-
-<!-- <script defer="" src="./index_files/htmlgame.js.Без названия" type="text/javascript"></script><div id="touchTrigger" style="position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; overflow: hidden;"></div></body></html> -->
+</html>
