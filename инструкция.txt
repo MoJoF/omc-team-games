@@ -1,0 +1,11 @@
+Чтобы скачать игру, надо:
+1. открыть html файл на itch.io
+2. открыть страницу html в режиме просмотра страницы (CTRL-U)
+3. создать в папке index.html 
+4. вставить код
+5. удалить скрипт с itch.io после <html>
+6. поставить favicon
+7. поставить шрифт unicode small.
+    1. найти script с id=ascii_small
+    2. заменить содержимое на "unicode_european_small.bitsyfont"
+    3. везде заменить ascii_small на unicode_european_small, чтобы интерпретатор bitsy понимал, как индексировать шрифт.
