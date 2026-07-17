@@ -10,7 +10,7 @@
 <title>Welcome to</title>
 
 <script type="bitsyGameData" id="exportedGameData">
-Добро пожаловать
+Добро пожаловать.
 
 # BITSY VERSION 6.0
 
@@ -16351,29 +16351,28 @@ DLG SPR_4
 
 DLG SPR_5
 """
-You see a letter from your aunt. "Dear Jay, 
-Thank you for for offering to look after my bakery tonight. I'm sure you'll meet a lot of interesting people!
-Best wishes, Auntie K" (exit "bakery2,8,8")
-
+Вы увидели письмо от тёти. 
+"Дорогой Джей, спасибо, что согласился присмотреть за моей пекарней. Уверена, ты познакомишься с многими интересными людьми!
+С наилучшими пожеланиями, тётя Кей." (exit "bakery2,8,8")
 """
 
 DLG SPR_6
-Your first customer has arrived. (exit "witch,3,12")
+Пришёл первый клиент. (exit "witch,3,12")
 
 DLG SPR_8
-A witch approaches the counter "Good evening! You must be Jay. Your aunt talks about you all the time. My name's Chaz. I'd like something dark and sweet please." (exit "bakerywitch,7,8")
+Ведьма подходит к прилавку. "Добрый вечер! Ты, должно быть, Джей. Твоя тётя много о тебе рассказывала. Меня зовут Чез. Дай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
 
 DLG SPR_9
 """
 {
   - wfg == 1 ?
-    You hand the witch a slice of White Forest Gateau.(exit "witch2,3,12")
+    Вы протягиваете ведьме торт "Белый лес"..(exit "witch2,3,12")
   - bfg == 1 ?
-    You hand the witch a slice of Black Forest Gateau.(exit "witch2,3,12")
+    Вы протягиваете ведьме торт "Чёрный лес".(exit "witch2,3,12")
   - lfg == 1 ?
-    You hand the witch a slice of Literal Forest Gateau.(exit "witch2,3,12")
+    Вы протягиваете ведьме торт "Лес".(exit "witch2,3,12")
   - else ?
-"Something dark and sweet please."
+"Чего-нибудь тёмного и сладкого, пожалуйста."
 }
 """
 
@@ -16381,16 +16380,16 @@ DLG SPR_a
 """
 {
   - step1 == 0 ?
-You decide you should make a Black Forest Gateau cake. It's the definition of dark and sweet. You get the basics and choose a base flavour. Vanilla or chocolate?
+Вы решили приготовить торт "Чёрный лес". Это сочетание насыщененного тёмного вкуса и сладости. Какой будет основной вкус?
 {choice
-	- Vanilla essence
-	  You add vanilla to your cake. {vanilla = 1} {step1 = 1}
-	- Cocoa powder
-	  You add chocolate to your cake. {choc = 1} {step1 = 1}
+	- Ваниль
+	  Вы добавили ваниль. {vanilla = 1} {step1 = 1}
+	- Какао-порошок.
+	  Вы добавляете какао-порошок. {choc = 1} {step1 = 1}
 }
 
   - else ?
-You've already added the ingredients to your cake
+Вы уже брали отсюда ингредиенты для торта.
 }
 """
 
@@ -16398,11 +16397,11 @@ DLG SPR_b
 """
 {
   - step2 == 1 ?
-You've already made your cake
+Вы уже испекли торт.
   - step1 == 0 ?
-You need to add ingredients before you make your cake.
+Вам нужно взять ингредиенты перед тем как готовить.
   - else ?
-You mix your ingredients carefully. Your cake is ready to cook now. {step2 = 1}
+Вы тщательно смешиваете ингредиенты. Теперь можно ставить в духовку. {step2 = 1}
 }
 """
 
@@ -16410,33 +16409,33 @@ DLG SPR_c
 """
 {
   - step2 == 0 ?
-Your cake isn't ready to cook just yet.
+Ваш торт ещё рано ставить в духовку.
   - step3 == 1 ?
-You've already cooked your cake.
+Вы уже испекли торт.
   - step2 == 1 ?
-Now you need to choose a topping.
+Выберите топпинг.
 {choice
-	- Dark red cherries
-	 You add the cherries to your cake. {cherries = 1}
+	- Тёмно-красная вишня
+	 Вы добавили вишню. {cherries = 1}
 {  - vanilla == 1 ?
-Your cake is finished! You made a White Forest Gateau {wfg = 1}{step3 = 1} 
+Ваш торт готов! Вы приготовили торт "Белый лес". {wfg = 1}{step3 = 1} 
   - cherries == 1 ?
-Your cake is finished! You made a Black Forest Gateau {bfg = 1}{step3 = 1}
+Ваш торт готов! Вы приготовили торт "Чёрный лес". {bfg = 1}{step3 = 1}
 }
-	- Miniature forest
-	 You add the trees to your cake. Your cake is finished! You made a Literal Forest Gateau. {lfg = 1}{step3 = 1}
+	- Миниатюрный лес
+	 Вы добавляете на торт деревья. Ваш торт готов! Это самый настоящий "Лес". {lfg = 1}{step3 = 1}
 }
 }
 """
 
 DLG SPR_d
 """
-Do you want to bin your cake?
+Хочешь выбросить торт?
 {choice
-	- No
-          You like your cake the way it is.
-	- Yes
-	  You bin your cake and start again. {step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}
+	- Нет
+          Тебе нравится этот торт.
+	- Да
+	  Ты выбросил торт, чтобы начать заново. {step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}
 }
 
 """
@@ -16445,11 +16444,11 @@ DLG SPR_e
 """
 {
   - bfg == 1 ?
-She looks pleased. "This looks so good! It's exactly what I was thinking of. Thank you Jay." The witch leaves and a traveller enters. {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+Она выглядит довольной. "Выглядит отлично. Как раз то, что нужно. Спасибо, Джей". Ведьма уходит, заходит путник. {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
   - lfg == 1 ?
-She looks confused. "Um, this looks nice Jay, but why are there little trees on it?" You explain the joke to her. (A Black Forest Gateau with actual trees) She laughs, but isn't a huge fan of the cake. The witch leaves and a traveller enters. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+Она выглядит озадаченной. "Выглядит неплохо, но почему деревья такие маленькие?". Вы объясняете ей шутку. Она смеётся, но торт ей не нравится. Ведьма уходит, заходит путник. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
   - wfg == 1 ?
- The witch doesn't look entirely happy with her cake. "This looks lovely Jay. I would have preferred something dark though." The witch leaves and a traveller enters. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+ Ведьма не очень довольна. "Выглядит чудесно, Джей, но я бы хотела что-то тёмное." Ведьма уходит, заходит путник. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
 }
 """
 
@@ -16457,11 +16456,11 @@ DLG SPR_f
 """
 {
   - bfg == 1 ?
-She looks pleased. "This looks so good! It's exactly what I was thinking of. Thank you Jay." The witch leaves and a traveller enters. {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+Она выглядит довольной. "Выглядит отлично. Как раз то, что нужно. Спасибо, Джей". Ведьма уходит, заходит путник. {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
   - lfg == 1 ?
-She looks confused. "Um, this looks nice Jay, but why are there little trees on it?" You explain the joke to her. (A Black Forest Gateau with actual trees) She laughs, but isn't a huge fan of the cake. The witch leaves and a traveller enters. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+Она выглядит озадаченной. "Выглядит неплохо, но почему деревья такие маленькие?". Вы объясняете ей шутку. Она смеётся, но торт ей не нравится. Ведьма уходит, заходит путник. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
   - wfg == 1 ?
- The witch doesn't look entirely happy with her cake. "This looks lovely Jay. I would have preferred something dark though." The witch leaves and a traveller enters. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+ Ведьма не очень довольна. "Выглядит чудесно, Джей, но я бы хотела что-то тёмное." Ведьма уходит, заходит путник. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
 }
 """
 
@@ -16484,21 +16483,21 @@ DLG SPR_h
 """
 
 DLG SPR_i
-A witch approaches the counter "Good evening! You must be Jay. Your aunt talks about you all the time. My name's Chaz. I'd like something dark and sweet please." (exit "bakerywitch,7,8")
+Ведьма подходит к прилавку. "Добрый вечер! Ты, должно быть, Джей. Твоя тётя много о тебе рассказывала. Меня зовут Чез. Дай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
 
 DLG SPR_j
-A witch approaches the counter "Good evening! You must be Jay. Your aunt talks about you all the time. My name's Chaz. I'd like something dark and sweet please." (exit "bakerywitch,7,8")
+Ведьма подходит к прилавку. "Добрый вечер! Ты, должно быть, Джей. Твоя тётя много о тебе рассказывала. Меня зовут Чез. Дай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
 
 DLG SPR_k
-A witch approaches the counter "Good evening! You must be Jay. Your aunt talks about you all the time. My name's Chaz. I'd like something dark and sweet please." (exit "bakerywitch,7,8")
+Ведьма подходит к прилавку. "Добрый вечер! Ты, должно быть, Джей. Твоя тётя много о тебе рассказывала. Меня зовут Чез. Дай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
 
 DLG SPR_l
 """
 {
   - bfg == 1 ?
-She looks pleased. "This looks so good! It's exactly what I was thinking of. Thank you Jay." The witch leaves and a traveller enters. {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+Она выглядит довольной. "Выглядит отлично. Как раз то, что нужно. Спасибо, Джей". Ведьма уходит, заходит путник. {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
   - lfg == 1 ?
-She looks confused. "Um, this looks nice Jay, but why are there little trees on it?" You explain the joke to her. (A Black Forest Gateau with actual trees) She laughs, but isn't a huge fan of the cake. The witch leaves and a traveller enters. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+Она выглядит озадаченной. "Выглядит неплохо, но почему деревья такие маленькие?". Вы объясняете ей шутку. Она смеётся, но торт ей не нравится. Ведьма уходит, заходит путник. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
   - wfg == 1 ?
  The witch doesn't look entirely happy with her cake. "This looks lovely Jay. I would have preferred something dark though." The witch leaves and a traveller enters. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
 }
@@ -16508,9 +16507,9 @@ DLG SPR_m
 """
 {
   - bfg == 1 ?
-She looks pleased. "This looks so good! It's exactly what I was thinking of. Thank you Jay." The witch leaves and a traveller enters. {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+Она выглядит довольной. "Выглядит отлично. Как раз то, что нужно. Спасибо, Джей". Ведьма уходит, заходит путник. {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
   - lfg == 1 ?
-She looks confused. "Um, this looks nice Jay, but why are there little trees on it?" You explain the joke to her. (A Black Forest Gateau with actual trees) She laughs, but isn't a huge fan of the cake. The witch leaves and a traveller enters. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+Она выглядит озадаченной. "Выглядит неплохо, но почему деревья такие маленькие?". Вы объясняете ей шутку. Она смеётся, но торт ей не нравится. Ведьма уходит, заходит путник. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
   - wfg == 1 ?
  The witch doesn't look entirely happy with her cake. "This looks lovely Jay. I would have preferred something dark though." The witch leaves and a traveller enters. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
 }
@@ -16563,9 +16562,9 @@ DLG SPR_r
 """
 {
   - step2 == 0 ?
-Your cake isn't ready to cook just yet.
+Ваш торт ещё рано ставить в духовку.
   - step3 == 1 ?
-You've already cooked your cake. 
+Вы уже испекли торт. 
   - vial == 1 ?
 You cook your cake. It's finished! You made a CAKE OF EITHER FUN OR DEATH {funordeath = 1}{step3 = 1} 
   - creamcheese == 1 ?
@@ -16589,12 +16588,12 @@ The traveller watches the cake warily. It's vibrating slightly. After a few mome
 
 DLG SPR_t
 """
-Do you want to bin your cake?
+Хочешь выбросить торт?
 {choice
-	- No
-          You like your cake the way it is.
-	- Yes
-	  You bin your cake and start again. {step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}
+	- Нет
+          Тебе нравится этот торт.
+	- Да
+	  Ты выбросил торт, чтобы начать заново. {step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}
 }
 """
 
@@ -16696,9 +16695,9 @@ DLG SPR_13
 """
 {
   - step2 == 0 ?
-Your cake isn't ready to cook just yet.
+Ваш торт ещё рано ставить в духовку.
   - step3 == 1 ?
-You've already cooked your cake.
+Вы уже испекли торт.
   - else ?
 You cook your cake. Now to decide the filling. Should you fill it with jam or blood?
 {choice
@@ -16740,16 +16739,16 @@ You've already added the ingredients to your cake
 """
 
 DLG SPR_15
-Your first customer has arrived. (exit "witch,3,12")
+Пришёл первый клиент. (exit "witch,3,12")
 
 DLG SPR_16
 """
-Do you want to bin your cake?
+Хочешь выбросить торт?
 {choice
-	- No
-          You like your cake the way it is.
-	- Yes
-	  You bin your cake and start again. {step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}
+	- Нет
+          Тебе нравится этот торт.
+	- Да
+	  Ты выбросил торт, чтобы начать заново. {step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}
 }
 """
 
@@ -16892,9 +16891,9 @@ DLG SPR_1i
 """
 {
   - step2 == 0 ?
-Your cake isn't ready to cook just yet.
+Ваш торт ещё рано ставить в духовку.
   - step3 == 1 ?
-You've already cooked your cake.
+Вы уже испекли торт.
   - else ?
 {  - allcatnip == 1 ?
 You cook your cake. It's finished! You made a RAINBOW CAKE. {rainbow = 1}{step3 = 1} 
@@ -16908,12 +16907,12 @@ You cook your cake. It's finished! You made a vegetarian cat cake. {vcc = 1}{ste
 
 DLG SPR_1j
 """
-Do you want to bin your cake?
+Хочешь выбросить торт?
 {choice
-	- No
-          You like your cake the way it is.
-	- Yes
-	  You bin your cake and start again. {step1 = 0}{step2 = 0}{step3 = 0}{tuna = 0}{notuna = 0}{pinch = 0}{allcatnip = 0}{rainbow = 0}{catcake = 0}{vcc = 0}
+	- Нет
+          Тебе нравится этот торт.
+	- Да
+	  Ты выбросил торт, чтобы начать заново. {step1 = 0}{step2 = 0}{step3 = 0}{tuna = 0}{notuna = 0}{pinch = 0}{allcatnip = 0}{rainbow = 0}{catcake = 0}{vcc = 0}
 }
 """
 
@@ -17043,9 +17042,9 @@ DLG SPR_1v
 """
 {
   - step2 == 0 ?
-Your cake isn't ready to cook just yet.
+Ваш торт ещё рано ставить в духовку.
   - step3 == 1 ?
-You've already cooked your cake.
+Вы уже испекли торт.
   - outside == 1 ?
 You cook your cake. It's finished! You made a confetti cake. It's wonderfully colourful. {confetti = 1}{step3 = 1} 
   - inside == 1 ?
@@ -17057,12 +17056,12 @@ You cook your cake. It's finished! You made a glitter cake. It's so sparkly. {gl
 
 DLG SPR_1w
 """
-Do you want to bin your cake?
+Хочешь выбросить торт?
 {choice
-	- No
-          You like your cake the way it is.
-	- Yes
-	  You bin your cake and start again. {step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}
+	- Нет
+          Тебе нравится этот торт.
+	- Да
+	  Ты выбросил торт, чтобы начать заново. {step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}
 }
 """
 
@@ -17182,9 +17181,9 @@ DLG SPR_28
 """
 {
   - step2 == 0 ?
-Your cake isn't ready to cook just yet.
+Ваш торт ещё рано ставить в духовку.
   - step3 == 1 ?
-You've already cooked your cake.
+Вы уже испекли торт.
   - packet == 1 ?
 It's finished! You made a packet ghost cake. It's shimmery. {pgc = 1}{step3 = 1} 
   - hammer == 1 ?
@@ -17197,12 +17196,12 @@ It's finished! You made a slightly singed ghost cake. It's still smoking a littl
 
 DLG SPR_29
 """
-Do you want to bin your cake?
+Хочешь выбросить торт?
 {choice
-	- No
-          You like your cake the way it is.
-	- Yes
-	  You bin your cake and start again. {step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}
+	- Нет
+          Тебе нравится этот торт.
+	- Да
+	  Ты выбросил торт, чтобы начать заново. {step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}
 }
 """
 
@@ -17398,9 +17397,9 @@ DLG SPR_2o
 """
 {
   - step2 == 0 ?
-Your cake isn't ready to cook just yet.
+Ваш торт ещё рано ставить в духовку.
   - step3 == 1 ?
-You've already cooked your cake.
+Вы уже испекли торт.
   - step2 == 1 ?
 {  - light == 1 ?
 Your cake is finished! You made 
@@ -17422,12 +17421,12 @@ a black and white layer cake. It combines both light and dark powers.{layer = 1}
 
 DLG SPR_2p
 """
-Do you want to bin your cake?
+Хочешь выбросить торт?
 {choice
-	- No
-          You like your cake the way it is.
-	- Yes
-	  You bin your cake and start again. {step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}
+	- Нет
+          Тебе нравится этот торт.
+	- Да
+	  Ты выбросил торт, чтобы начать заново. {step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}
 }
 """
 
