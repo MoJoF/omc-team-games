@@ -16351,7 +16351,7 @@ DLG SPR_4
 
 DLG SPR_5
 """
-Вы увидели письмо от тёти. 
+Новое письмо. 
 "Дорогой Джей, спасибо, что согласился присмотреть за моей пекарней. Уверена, ты познакомишься с многими интересными людьми!
 С наилучшими пожеланиями, тётя Кей." (exit "bakery2,8,8")
 """
@@ -16465,7 +16465,7 @@ DLG SPR_f
 """
 
 DLG SPR_g
-"Good evening. I have been walking a long while, may I have something simple to warm me through?" (exit "bakerytraveller,7,8")
+Добрый вечер. Я долго была в пути. Можно мне чего-то простого и горячего? (exit "bakerytraveller,7,8")
 
 DLG SPR_h
 """
@@ -16477,7 +16477,7 @@ DLG SPR_h
   - bvc == 1 ?
     You hand the traveller a slice of basic vanilla cake.(exit "traveller2,3,12")
   - else ?
-"May I have something simple to warm me through?"
+"Можно мне чего-нибудь простого и горячего?"
 }
 
 """
@@ -16516,27 +16516,28 @@ DLG SPR_m
 """
 
 DLG SPR_n
-"Good evening. I have been walking a long while, may I have something simple to warm me through?" (exit "bakerytraveller,7,8")
+Добрый вечер. Я долго была в пути. Можно мне чего-то простого и горячего? (exit "bakerytraveller,7,8")
 
 DLG SPR_o
-"Good evening. I have been walking a long while, may I have something simple to warm me through?" (exit "bakerytraveller,7,8")
+Добрый вечер. Я долго была в пути. Можно мне чего-то простого и горячего? (exit "bakerytraveller,7,8")
 
 DLG SPR_p
-"Good evening. I have been walking a long while, may I have something simple to warm me through?" (exit "bakerytraveller,7,8")
+Добрый вечер. Я долго была в пути. Можно мне чего-то простого и горячего? (exit "bakerytraveller,7,8")
 
 DLG SPR_7
 """
 {
   - step1 == 0 ?
-You decide to start making a basic vanilla cake. However you spot a mysterious green vial in the back of the cupboard. It smell delicious. Do you add it?
+Вы решаете испечь простой ванильный кекс. Однако в шкафу вы замечаете таинственный зелёный флакон. Из него вкусно пахнет. 
+Добавить содержимое в кекс?
 {choice
-	- Add the vial
-	  You pour the contents of the vial into your batter. It now has an oily rainbow sheen.{vial = 1} {step1 = 1}
-	- Don't do it, that's a bad idea
-	  You decide not to add this suspicious vial to your cake. Smart move.{step1 = 1}
+	- Да
+	  Вы выливаете содержимое флакона в тесто. Теперь оно отливает маслянистой радужной пленкой. {vial = 1} {step1 = 1}
+	- Нет, это плохая идея
+	  Вы решаете не рисковать. Разумное решение. {step1 = 1}
 }
   - else ?
-You've already added the ingredients to your cake
+Вы уже добавили ингредиенты.
 }
 """
 
@@ -16544,16 +16545,16 @@ DLG SPR_q
 """
 {
   - step2 == 1 ?
-You've already made your cake
+Торт уже готов.
   - step1 == 0 ?
-You need to add ingredients before you make your cake.
+Перед готовкой нужно добавить ингредиенты.
   - else ?
-You mix your ingredients carefully. You think you should add something extra to make your cake a bit more interesting. 
+Вы тщательно смешиваете ингредиенты. Кажется, нужно ещё что-то добавить, что сделать кекс поинтереснее.
 {choice
-	- Add a cream cheese layer {goey = 1}
-	  You add the cream cheese layer to your cake.{creamcheese = 1} {step2 = 1}
-	- Add vanilla icing {basic = 1}
-	  You decide to ice the cake after it's cooked.{icing = 1}{step2 = 1}
+	- Добавить крем-сыр {goey = 1}
+	  Вы добавляете крем-сыр.{creamcheese = 1} {step2 = 1}
+	- Добавить ванильную глазурь {basic = 1}
+	  Вы решаете покрыть торт ванильной глазурью. {icing = 1}{step2 = 1}
 }
 }
 """
@@ -16687,7 +16688,7 @@ DLG SPR_12
   - step1 == 0 ?
 You decide to start with a simple sponge cake. You'll add more to it later.{step1 = 1}
   - else ?
-You've already added the ingredients to your cake
+Вы уже добавили ингредиенты.
 }
 """
 
@@ -16722,9 +16723,9 @@ DLG SPR_14
 """
 {
   - step2 == 1 ?
-You've already made your cake
+Торт уже готов.
   - step1 == 0 ?
-You need to add ingredients before you make your cake.
+Перед готовкой нужно добавить ингредиенты.
   - step2 == 0 ?
 You're about to bake the cake. Will you make it a fun shape or a boring one??
 {choice
@@ -16734,7 +16735,7 @@ You're about to bake the cake. Will you make it a fun shape or a boring one??
 	  You decide against a fun shape and decide to make a basic cake with a fun filling. {boring = 1}{step2 = 1}
 }
   - else ?
-You've already added the ingredients to your cake
+Вы уже добавили ингредиенты.
 }
 """
 
@@ -16863,7 +16864,7 @@ You've never made a cake for cats before. You quickly google how to make one. Yo
 }
 
   - else ?
-You've already added the ingredients to your cake
+Вы уже добавили ингредиенты.
 }
 """
 
@@ -16871,9 +16872,9 @@ DLG SPR_1h
 """
 {
   - step2 == 1 ?
-You've already made your cake
+Торт уже готов.
   - step1 == 0 ?
-You need to add ingredients before you make your cake.
+Перед готовкой нужно добавить ингредиенты.
   - step2 == 0 ?
 As you're mixing the ingredients for your cake you spot a bag of catnip out of the corner of your eye. 
 {choice
@@ -16883,7 +16884,7 @@ As you're mixing the ingredients for your cake you spot a bag of catnip out of t
 	  You throw caution to the wind and chuck the whole bag of catnip into your cake.{allcatnip = 1}{step2 = 1}
 }
   - else ?
-You've already added the ingredients to your cake
+Вы уже добавили ингредиенты.
 }
 """
 
@@ -17012,7 +17013,7 @@ Something fit for a unicor- uniman. Hmm there's a lot of food colouring here and
 }
 
   - else ?
-You've already added the ingredients to your cake
+Вы уже добавили ингредиенты.
 }
 """
 
@@ -17020,9 +17021,9 @@ DLG SPR_1u
 """
 {
   - step2 == 1 ?
-You've already made your cake
+Торт уже готов.
   - step1 == 0 ?
-You need to add ingredients before you make your cake.
+Перед готовкой нужно добавить ингредиенты.
   - else ?
 {
   - glitter == 1 ?
@@ -17151,7 +17152,7 @@ How do you make cake for a ghost? You can make it first and then kill it afterwa
 	  You decide to make it the old fashioned way. {kill = 1} {step1 = 1}
 }
   - else ?
-You've already added the ingredients to your cake
+Вы уже добавили ингредиенты.
 }
 """
 
@@ -17159,9 +17160,9 @@ DLG SPR_27
 """
 {
   - step2 == 1 ?
-You've already made your cake
+Торт уже готов.
   - step1 == 0 ?
-You need to add ingredients before you make your cake.
+Перед готовкой нужно добавить ингредиенты.
   - else ?
 {
   - packet == 1 ?
@@ -17369,7 +17370,7 @@ You find a compartment at the back of the pantry dedicated to excessively powerf
 }
 
   - else ?
-You've already added the ingredients to your cake
+Вы уже добавили ингредиенты.
 }
 """
 
@@ -17377,9 +17378,9 @@ DLG SPR_2n
 """
 {
   - step2 == 1 ?
-You've already made your cake
+Торт уже готов.
   - step1 == 0 ?
-You need to add ingredients before you make your cake.
+Перед готовкой нужно добавить ингредиенты.
   - step2 == 0 ?
 You can pick accent ingredients for your cake. You decision will literally shape the fate of the world. No pressure.
 {choice
@@ -17389,7 +17390,7 @@ You can pick accent ingredients for your cake. You decision will literally shape
 	  You add deep and dark ingredients to add power to your cake.{daccent = 1}{step2 = 1}
 }
   - else ?
-You've already added the ingredients to your cake
+Вы уже добавили ингредиенты.
 }
 """
 
