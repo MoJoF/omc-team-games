@@ -16351,8 +16351,9 @@ DLG SPR_4
 
 DLG SPR_5
 """
-Новое письмо. 
-"Дорогой Джей, спасибо, что согласился присмотреть за моей пекарней. Уверена, ты познакомишься с многими интересными людьми!
+У вас новое письмо.
+
+"Дорогой Джей, спасибо, что согласился присмотреть за моей пекарней. Уверена, ты познакомишься со многими интересными людьми!
 С наилучшими пожеланиями, тётя Кей." (exit "bakery2,8,8")
 """
 
@@ -16360,13 +16361,13 @@ DLG SPR_6
 Пришёл первый клиент. (exit "witch,3,12")
 
 DLG SPR_8
-Ведьма подходит к прилавку. "Добрый вечер! Ты, должно быть, Джей. Твоя тётя много о тебе рассказывала. Меня зовут Чез. Дай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
+Ведьма подходит к прилавку. "Добрый вечер! Ты, должно быть, Джей. Твоя тётя много о тебе рассказывала. Меня зовут Чез. Сделай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
 
 DLG SPR_9
 """
 {
   - wfg == 1 ?
-    Вы протягиваете ведьме торт "Белый лес"..(exit "witch2,3,12")
+    Вы протягиваете ведьме торт "Белый лес".(exit "witch2,3,12")
   - bfg == 1 ?
     Вы протягиваете ведьме торт "Чёрный лес".(exit "witch2,3,12")
   - lfg == 1 ?
@@ -16401,7 +16402,7 @@ DLG SPR_b
   - step1 == 0 ?
 Вам нужно взять ингредиенты перед тем как готовить.
   - else ?
-Вы тщательно смешиваете ингредиенты. Теперь можно ставить в духовку. {step2 = 1}
+Вы тщательно смешали ингредиенты и поставили в духовку. {step2 = 1}
 }
 """
 
@@ -16444,11 +16445,11 @@ DLG SPR_e
 """
 {
   - bfg == 1 ?
-Она выглядит довольной. "Выглядит отлично. Как раз то, что нужно. Спасибо, Джей". Ведьма уходит, заходит путник. {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+Она выглядит довольной. "Выглядит отлично. Как раз то, что нужно. Спасибо, Джей". Ведьма уходит, заходит путница. {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
   - lfg == 1 ?
-Она выглядит озадаченной. "Выглядит неплохо, но почему деревья такие маленькие?". Вы объясняете ей шутку. Она смеётся, но торт ей не нравится. Ведьма уходит, заходит путник. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+Она выглядит озадаченной. "Выглядит неплохо, но почему деревья такие маленькие?". Вы объясняете ей шутку. Она смеётся, но торт ей не нравится. Ведьма уходит, заходит путница. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
   - wfg == 1 ?
- Ведьма не очень довольна. "Выглядит чудесно, Джей, но я бы хотела что-то тёмное." Ведьма уходит, заходит путник. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+ Ведьма не очень довольна. "Выглядит чудесно, Джей, но я бы хотела что-то тёмное." Ведьма уходит, заходит путница. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
 }
 """
 
@@ -16456,11 +16457,11 @@ DLG SPR_f
 """
 {
   - bfg == 1 ?
-Она выглядит довольной. "Выглядит отлично. Как раз то, что нужно. Спасибо, Джей". Ведьма уходит, заходит путник. {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+Она выглядит довольной. "Выглядит отлично. Как раз то, что нужно. Спасибо, Джей". Ведьма уходит, заходит путница. {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
   - lfg == 1 ?
-Она выглядит озадаченной. "Выглядит неплохо, но почему деревья такие маленькие?". Вы объясняете ей шутку. Она смеётся, но торт ей не нравится. Ведьма уходит, заходит путник. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+Она выглядит озадаченной. "Выглядит неплохо, но почему деревья такие маленькие?". Вы объясняете ей шутку. Она смеётся, но торт ей не нравится. Ведьма уходит, заходит путница. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
   - wfg == 1 ?
- Ведьма не очень довольна. "Выглядит чудесно, Джей, но я бы хотела что-то тёмное." Ведьма уходит, заходит путник. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+ Ведьма не очень довольна. "Выглядит чудесно, Джей, но я бы хотела что-то тёмное." Ведьма уходит, заходит путница. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
 }
 """
 
@@ -16471,35 +16472,34 @@ DLG SPR_h
 """
 {
   - funordeath == 1 ?
-    You hand the traveller a slice of your CAKE OF EITHER FUN OR DEATH.(exit "traveller2,3,12")
+    Вы протягиваете путнице кекс ВЕСЕЛЬЯ ИЛИ СМЕРТИ. (exit "traveller2,3,12")
   - gbc == 1 ?
-    You hand the traveller a slice of Gooey butter cake.(exit "traveller2,3,12")
+    Вы протягиваете путнице нежный сливочный кекс. (exit "traveller2,3,12")
   - bvc == 1 ?
-    You hand the traveller a slice of basic vanilla cake.(exit "traveller2,3,12")
+    Вы протягиваете путнице ванильный кекс. (exit "traveller2,3,12")
   - else ?
 "Можно мне чего-нибудь простого и горячего?"
 }
-
 """
 
 DLG SPR_i
-Ведьма подходит к прилавку. "Добрый вечер! Ты, должно быть, Джей. Твоя тётя много о тебе рассказывала. Меня зовут Чез. Дай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
+Ведьма подходит к прилавку. "Добрый вечер! Ты, должно быть, Джей. Твоя тётя много о тебе рассказывала. Меня зовут Чез. Сделай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
 
 DLG SPR_j
-Ведьма подходит к прилавку. "Добрый вечер! Ты, должно быть, Джей. Твоя тётя много о тебе рассказывала. Меня зовут Чез. Дай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
+Ведьма подходит к прилавку. "Добрый вечер! Ты, должно быть, Джей. Твоя тётя много о тебе рассказывала. Меня зовут Чез. Сделай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
 
 DLG SPR_k
-Ведьма подходит к прилавку. "Добрый вечер! Ты, должно быть, Джей. Твоя тётя много о тебе рассказывала. Меня зовут Чез. Дай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
+Ведьма подходит к прилавку. "Добрый вечер! Ты, должно быть, Джей. Твоя тётя много о тебе рассказывала. Меня зовут Чез. Сделай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
 
 DLG SPR_l
 """
 {
   - bfg == 1 ?
-Она выглядит довольной. "Выглядит отлично. Как раз то, что нужно. Спасибо, Джей". Ведьма уходит, заходит путник. {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+Она выглядит довольной. "Выглядит отлично. Как раз то, что нужно. Спасибо, Джей". Ведьма уходит, заходит путница. {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
   - lfg == 1 ?
-Она выглядит озадаченной. "Выглядит неплохо, но почему деревья такие маленькие?". Вы объясняете ей шутку. Она смеётся, но торт ей не нравится. Ведьма уходит, заходит путник. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+Она выглядит озадаченной. "Выглядит неплохо, но почему деревья такие маленькие?". Вы объясняете ей шутку. Она смеётся, но торт ей не нравится. Ведьма уходит, заходит путница. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
   - wfg == 1 ?
- The witch doesn't look entirely happy with her cake. "This looks lovely Jay. I would have preferred something dark though." The witch leaves and a traveller enters. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+ Ведьма выглядит не совсем довольной своим тортом. "Выглядит прекрасно, Джей. Хотя я бы предпочла что-нибудь тёмное.". Ведьма уходит, заходит путница. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
 }
 """
 
@@ -16507,11 +16507,11 @@ DLG SPR_m
 """
 {
   - bfg == 1 ?
-Она выглядит довольной. "Выглядит отлично. Как раз то, что нужно. Спасибо, Джей". Ведьма уходит, заходит путник. {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+Она выглядит довольной. "Выглядит отлично. Как раз то, что нужно. Спасибо, Джей". Ведьма уходит, заходит путница. {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
   - lfg == 1 ?
-Она выглядит озадаченной. "Выглядит неплохо, но почему деревья такие маленькие?". Вы объясняете ей шутку. Она смеётся, но торт ей не нравится. Ведьма уходит, заходит путник. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+Она выглядит озадаченной. "Выглядит неплохо, но почему деревья такие маленькие?". Вы объясняете ей шутку. Она смеётся, но торт ей не нравится. Ведьма уходит, заходит путница. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
   - wfg == 1 ?
- The witch doesn't look entirely happy with her cake. "This looks lovely Jay. I would have preferred something dark though." The witch leaves and a traveller enters. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
+ Ведьма выглядит не совсем довольной своим тортом. "Выглядит прекрасно, Джей. Хотя я бы предпочла что-нибудь тёмное.". Ведьма уходит, заходит путница. {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{choc = 0}{vanilla = 0}{cherries = 0}{trees = 0}{wfg = 0}{bfg = 0}{lfg = 0}(exit "traveller,3,12")
 }
 """
 
@@ -16549,7 +16549,7 @@ DLG SPR_q
   - step1 == 0 ?
 Перед готовкой нужно добавить ингредиенты.
   - else ?
-Вы тщательно смешиваете ингредиенты. Кажется, нужно ещё что-то добавить, что сделать кекс поинтереснее.
+Вы тщательно смешали ингредиенты. Кажется, нужно ещё что-то добавить, что сделать кекс поинтереснее.
 {choice
 	- Добавить крем-сыр {goey = 1}
 	  Вы добавляете крем-сыр.{creamcheese = 1} {step2 = 1}
@@ -16567,11 +16567,11 @@ DLG SPR_r
   - step3 == 1 ?
 Вы уже испекли торт. 
   - vial == 1 ?
-You cook your cake. It's finished! You made a CAKE OF EITHER FUN OR DEATH {funordeath = 1}{step3 = 1} 
+Готово. У вас получился кекс ВЕСЕЛЬЯ ИЛИ СМЕРТИ. {funordeath = 1}{step3 = 1} 
   - creamcheese == 1 ?
-You cook your cake. It's finished! You made a Gooey butter cake {gbc = 1}{step3 = 1}
+Готово. У вас получился нежный сливочный кекс. {gbc = 1}{step3 = 1}
   - icing == 1 ?
-You cook your cake. It's finished! You made a basic vanilla cake. {bvc = 1}{step3 = 1}
+Готово. У вас получился обычный ванильный кекс. {bvc = 1}{step3 = 1}
 }
 """
 
@@ -16579,11 +16579,11 @@ DLG SPR_s
 """
 {
   - gbc == 1 ?
-The traveller grins. "Wow, that looks delicious! This will keep me going for a few hours longer, thank you." {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
+Путница расплывается в улыбке. Ух ты, как вкусно выглядит! Теперь я смогу идти ещё несколько часов. Спасибо!" {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
   - bvc == 1 ?
-The traveller eyes the cake hungrily. "That looks so good, thank you." He leaves with a smile.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
+Выглядит очень аппетитно. Спасибо! Он уходит с улыбкой.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
   - funordeath == 1 ?
-The traveller watches the cake warily. It's vibrating slightly. After a few moments hesitation, he takes a bite. His suspicion quickly turns to happiness. "Delicious!" He cries and finishes the slice in just a few bites. All seems to be going well until he disappears into a cloud of rainbow smoke. And.... Oh no.... He's turned into a frog. He gives you a rather reproachful croak. {frog = 1}{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
+Путница настороженно смотрит на кекс. Она слегка колеблется. После недолгих колебаний она, всё же, откусывает кусочек. Подозрение быстро сменяется восторгом. "Как вкусно!". Восклицает она и за несколько укусов доедает весь кусок. Кажется, всё идёт прекрасно... пока она внезапно не исчезает в облаке радужного дыма. И... О нет... Она превратилась в лягушку. Лягушка укоризненно квакает, глядя на тебя. {frog = 1}{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
 }
 """
 
@@ -16602,11 +16602,11 @@ DLG SPR_u
 """
 {
   - gbc == 1 ?
-The traveller grins. "Wow, that looks delicious! This will keep me going for a few hours longer, thank you." {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
+Путница расплывается в улыбке. Ух ты, как вкусно выглядит! Теперь я смогу идти ещё несколько часов. Спасибо!" {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
   - bvc == 1 ?
-The traveller eyes the cake hungrily. "That looks so good, thank you." He leaves with a smile.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
+Выглядит очень аппетитно. Спасибо! Он уходит с улыбкой.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
   - funordeath == 1 ?
-The traveller watches the cake warily. It's vibrating slightly. After a few moments hesitation, he takes a bite. His suspicion quickly turns to happiness. "Delicious!" He cries and finishes the slice in just a few bites. All seems to be going well until he disappears into a cloud of rainbow smoke. And.... Oh no.... He's turned into a frog. He gives you a rather reproachful croak. {frog = 1}{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
+путница настороженно смотрит на торт. Он слегка вибрирует. После недолгих колебаний он всё же откусывает кусочек. Подозрение быстро сменяется восторгом. "Как вкусно!". Восклицает он и за несколько укусов доедает весь кусок. Кажется, всё идёт прекрасно... пока он внезапно не исчезает в облаке радужного дыма. И... О нет... Он превратился в лягушку. Лягушка укоризненно квакает, глядя на тебя. {frog = 1}{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
 }
 """
 
@@ -16614,11 +16614,11 @@ DLG SPR_v
 """
 {
   - gbc == 1 ?
-The traveller grins. "Wow, that looks delicious! This will keep me going for a few hours longer, thank you." {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
+Путница расплывается в улыбке. Ух ты, как вкусно выглядит! Теперь я смогу идти ещё несколько часов. Спасибо!" {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
   - bvc == 1 ?
-The traveller eyes the cake hungrily. "That looks so good, thank you." He leaves with a smile.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
+Выглядит очень аппетитно. Спасибо! Он уходит с улыбкой.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
   - funordeath == 1 ?
-The traveller watches the cake warily. It's vibrating slightly. After a few moments hesitation, he takes a bite. His suspicion quickly turns to happiness. "Delicious!" He cries and finishes the slice in just a few bites. All seems to be going well until he disappears into a cloud of rainbow smoke. And.... Oh no.... He's turned into a frog. He gives you a rather reproachful croak. {frog = 1}{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
+путница настороженно смотрит на торт. Он слегка вибрирует. После недолгих колебаний он всё же откусывает кусочек. Подозрение быстро сменяется восторгом. "Как вкусно!". Восклицает он и за несколько укусов доедает весь кусок. Кажется, всё идёт прекрасно... пока он внезапно не исчезает в облаке радужного дыма. И... О нет... Он превратился в лягушку. Лягушка укоризненно квакает, глядя на тебя. {frog = 1}{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
 }
 """
 
@@ -16626,43 +16626,43 @@ DLG SPR_w
 """
 {
   - gbc == 1 ?
-The traveller grins. "Wow, that looks delicious! This will keep me going for a few hours longer, thank you." {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
+Путница расплывается в улыбке. Ух ты, как вкусно выглядит! Теперь я смогу идти ещё несколько часов. Спасибо!" {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
   - bvc == 1 ?
-The traveller eyes the cake hungrily. "That looks so good, thank you." He leaves with a smile.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
+Выглядит очень аппетитно. Спасибо! Он уходит с улыбкой.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
   - funordeath == 1 ?
-The traveller watches the cake warily. It's vibrating slightly. After a few moments hesitation, he takes a bite. His suspicion quickly turns to happiness. "Delicious!" He cries and finishes the slice in just a few bites. All seems to be going well until he disappears into a cloud of rainbow smoke. And.... Oh no.... He's turned into a frog. He gives you a rather reproachful croak. {frog = 1}{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
+путница настороженно смотрит на торт. Он слегка вибрирует. После недолгих колебаний он всё же откусывает кусочек. Подозрение быстро сменяется восторгом. "Как вкусно!". Восклицает он и за несколько укусов доедает весь кусок. Кажется, всё идёт прекрасно... пока он внезапно не исчезает в облаке радужного дыма. И... О нет... Он превратился в лягушку. Лягушка укоризненно квакает, глядя на тебя. {frog = 1}{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
 }
 """
 
 DLG SPR_x
 """
-A vampire approaches the counter. "Good evening!" He begins cheerily. "I am Zaff, the vampire Count of the nearby mountains. I'd like something red and fun to satiate my appetite tonight." (exit "bakeryvampire,7,8"){
+К стойке подходит вампир. "Добрый вечер!". Весело начинает он. "Я Зафф, граф-вампир из близлежащих гор. Сегодня вечером я хотел бы что-нибудь красное и весёлое, чтобы утолить свой аппетит." (exit "bakeryvampire,7,8"){
   - frog == 1 ?
-    The traveller (frog) croaks in contempt from the floor of your bakery. It doesn't look like he's leaving any time soon.
+    Путница презрительно квакает с пола твоей пекарни. Похоже, она не собирается уходить в ближайшее время.
 }
 """
 
 DLG SPR_y
 """
-A vampire approaches the counter. "Good evening!" He begins cheerily. "I am Zaff, the vampire Count of the nearby mountains. I'd like something red and fun to satiate my appetite tonight." (exit "bakeryvampire,7,8"){
+К стойке подходит вампир. "Добрый вечер!". Весело начинает он. "Я Зафф, граф-вампир из близлежащих гор. Сегодня вечером я хотел бы что-нибудь красное и весёлое, чтобы утолить свой аппетит." (exit "bakeryvampire,7,8"){
   - frog == 1 ?
-    The traveller (frog) croaks in contempt from the floor of your bakery. It doesn't look like he's leaving any time soon.
+    Путница презрительно квакает с пола твоей пекарни. Похоже, она не собирается уходить в ближайшее время.
 }
 """
 
 DLG SPR_z
 """
-A vampire approaches the counter. "Good evening!" He begins cheerily. "I am Zaff, the vampire Count of the nearby mountains. I'd like something red and fun to satiate my appetite tonight." (exit "bakeryvampire,7,8"){
+К стойке подходит вампир. "Добрый вечер!". Весело начинает он. "Я Зафф, граф-вампир из близлежащих гор. Сегодня вечером я хотел бы что-нибудь красное и весёлое, чтобы утолить свой аппетит." (exit "bakeryvampire,7,8"){
   - frog == 1 ?
-    The traveller (frog) croaks in contempt from the floor of your bakery. It doesn't look like he's leaving any time soon.
+    Путница презрительно квакает с пола твоей пекарни. Похоже, она не собирается уходить в ближайшее время.
 }
 """
 
 DLG SPR_10
 """
-A vampire approaches the counter. "Good evening!" He begins cheerily. "I am Zaff, the vampire Count of the nearby mountains. I'd like something red and fun to satiate my appetite tonight." (exit "bakeryvampire,7,8"){
+К стойке подходит вампир. "Добрый вечер!". Весело начинает он. "Я Зафф, граф из близлежащих гор. Сегодня вечером я хотел бы что-нибудь красное и весёлое, чтобы утолить свой аппетит." (exit "bakeryvampire,7,8"){
   - frog == 1 ?
-    The traveller (frog) croaks in contempt from the floor of your bakery. It doesn't look like he's leaving any time soon.
+    Путница презрительно квакает с пола твоей пекарни. Похоже, она не собирается уходить в ближайшее время.
 }
 """
 
@@ -16670,15 +16670,15 @@ DLG SPR_11
 """
 {
   - srwb == 1 ?
-    You hand the vampire a slice of your blood swiss roll. (exit "vampire2,3,12")
+    Вы протягиваете вампиру Швейцарский рулет с кровью. (exit "vampire2,3,12")
   - scwb == 1 ?
-    You hand the vampire a slice of your sponge cake with blood. (exit "vampire2,3,12")
+    Вы протягиваете вампиру бисквит с кровью. (exit "vampire2,3,12")
   - scwj == 1 ?
-    You hand the vampire a slice of your sponge cake with jam. (exit "vampire2,3,12")
+    Вы протягиваете вампиру бисквит с вареньем. (exit "vampire2,3,12")
   - sr == 1 ?
-    You hand the vampire a slice of your jam swiss roll. (exit "vampire2,3,12")
+    Вы протягиваете вампиру Швейцарский рулет. (exit "vampire2,3,12")
   - else ?
-"Something red and fun please."
+"Что-нибудь красное и весёлое, пожалуйста."
 }
 """
 
@@ -16686,7 +16686,7 @@ DLG SPR_12
 """
 {
   - step1 == 0 ?
-You decide to start with a simple sponge cake. You'll add more to it later.{step1 = 1}
+Вы решаете начать с простого бисквита. Потом добавите туда что-нибудь ещё. {step1 = 1}
   - else ?
 Вы уже добавили ингредиенты.
 }
@@ -16700,21 +16700,21 @@ DLG SPR_13
   - step3 == 1 ?
 Вы уже испекли торт.
   - else ?
-You cook your cake. Now to decide the filling. Should you fill it with jam or blood?
+Бисквит готов. Какая будет начинка?
 {choice
-	- Blood
-	  You decide to use animal blood as a filling.{blood = 1} {step3 = 1}
+	- Кровь
+	  Вы решаете добавить звериную кровь.{blood = 1} {step3 = 1}
 {  - boring == 1 ?
-Your cake is finished! You made a sponge cake with jam. (By jam I mean blood.) {scwb = 1}{step3 = 1} 
+Готов! Вы приготовили бисквит с вареньем. (То есть с кровью.) {scwb = 1}{step3 = 1} 
   - fun == 1 ?
-Your cake is finished! You made a Swiss roll (but with blood){srwb = 1}{step3 = 1}
+Готово! Вы сделали Швейцарский рулет, (но в с кровью){srwb = 1}{step3 = 1}
 }
-	- Jam
-	  You decide to use jam as a filling.{jam = 1}{step3 = 1}
+	- Варенье
+	  Вы решаете добавить варенье.{jam = 1}{step3 = 1}
 {  - boring == 1 ?
-Your cake is finished! You made a sponge cake with jam. {scwj = 1}{step3 = 1} 
+Готов! Вы приготовили бисквит с вареньем. {scwj = 1}{step3 = 1} 
   - fun == 1 ?
-Your cake is finished! You made a Swiss roll. {sr = 1}{step3 = 1}
+Готово! Вы сделали Швейцарский рулет. {sr = 1}{step3 = 1}
 }
 }
 """
@@ -16727,12 +16727,12 @@ DLG SPR_14
   - step1 == 0 ?
 Перед готовкой нужно добавить ингредиенты.
   - step2 == 0 ?
-You're about to bake the cake. Will you make it a fun shape or a boring one??
+Вы собираетесь печь. Сделаете форму забавной или обычной??
 {choice
-	- Fun shape
-	  You decide to make a Swiss Roll cake. Spirals are always fun.{fun = 1} {step2 = 1}
-	- Boring shape
-	  You decide against a fun shape and decide to make a basic cake with a fun filling. {boring = 1}{step2 = 1}
+	- Забавная форма
+	  Вы решаете приготовить Швейцарский рулет. Будет забавно. {fun = 1} {step2 = 1}
+	- Обычная форма
+	  Вы решаете не экспериментировать с формой, а добавить необычную начинку. {boring = 1}{step2 = 1}
 }
   - else ?
 Вы уже добавили ингредиенты.
@@ -16757,17 +16757,17 @@ DLG SPR_17
 """
 {
   - srwb == 1 ?
-The vampire looks delighted. "Oooo what a fun little cake. Thank you, baker." He leaves with a huge grin.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
+Вампир в восторге. "Ооо, какой забавный маленький тортик". Спасибо! Он уходит с широкой улыбкой.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
   - scwb == 1 ?
-The vampire thanks you, but he looks as though he wanted something a bit more interesting. He leaves.{score = score + 2}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
+Вампир благодарит тебя, но, кажется, он надеялся на что-то необычное. Он уходит.{score = score + 2}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
   - scwj == 1 ?
-The vampire looks disapointed. "Hmm, this doesn't look particularly fun." He's not a fan of the jam. He leaves dissatisfied.{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
+Вампир выглядит разочарованным. "Хмм, это не выглядит интересно". Ему не понравилось. Он уходит недовольным.{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
 {
   - frog == 1 ?
-The frog croaks at you in a judgemental tone.
+Лягушка осуждающе квакает в вашу сторону.
 }
   - sr == 1 ?
-The vampire looks intrigued. "Oooo what a fun little cake. But what's this, in the middle?" You explain what jam is but the vampire seems a little bemused. It doesn't quite suit his palate.{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
+Вампир выглядит заинтересованным. "Ооо, какой необычный маленький тортик. Но что это у него внутри?". Ты объясняешь ему, что такое варенье, но вампир выглядит немного озадаченным. Это не совсем в его вкусе.{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
 }
 """
 
@@ -16775,17 +16775,17 @@ DLG SPR_18
 """
 {
   - srwb == 1 ?
-The vampire looks delighted. "Oooo what a fun little cake. Thank you, baker." He leaves with a huge grin.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
+Вампир в восторге. "Ооо, какой забавный маленький тортик". Спасибо! Он уходит с широкой улыбкой.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
   - scwb == 1 ?
-The vampire thanks you, but he looks as though he wanted something a bit more interesting. He leaves.{score = score + 2}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
+Вампир благодарит тебя, но, кажется, он надеялся на что-то необычное. Он уходит.{score = score + 2}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
   - scwj == 1 ?
-The vampire looks disapointed. "Hmm, this doesn't look particularly fun." He's not a fan of the jam. He leaves dissatisfied.{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
+Вампир выглядит разочарованным. "Хмм, это не выглядит интересно". Ему не понравилось. Он уходит недовольным.{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
 {
   - frog == 1 ?
-The frog croaks at you in a judgemental tone.
+Лягушка осуждающе квакает в вашу сторону.
 }
   - sr == 1 ?
-The vampire looks intrigued. "Oooo what a fun little cake. But what's this, in the middle?" You explain what jam is but the vampire seems a little bemused. It doesn't quite suit his palate.{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
+Вампир выглядит заинтересованным. "Ооо, какой необычный маленький тортик. Но что это у него внутри?". Ты объясняешь ему, что такое варенье, но вампир выглядит немного озадаченным. Это не совсем в его вкусе.{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
 }
 """
 
@@ -16793,17 +16793,17 @@ DLG SPR_19
 """
 {
   - srwb == 1 ?
-The vampire looks delighted. "Oooo what a fun little cake. Thank you, baker." He leaves with a huge grin.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
+Вампир в восторге. "Ооо, какой забавный маленький тортик". Спасибо! Он уходит с широкой улыбкой.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
   - scwb == 1 ?
-The vampire thanks you, but he looks as though he wanted something a bit more interesting. He leaves.{score = score + 2}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
+Вампир благодарит тебя, но, кажется, он надеялся на что-то необычное. Он уходит.{score = score + 2}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
   - scwj == 1 ?
-The vampire looks disapointed. "Hmm, this doesn't look particularly fun." He's not a fan of the jam. He leaves dissatisfied.{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
+Вампир выглядит разочарованным. "Хмм, это не выглядит интересно". Ему не понравилось. Он уходит недовольным.{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
 {
   - frog == 1 ?
-The frog croaks at you in a judgemental tone.
+Лягушка осуждающе квакает в вашу сторону.
 }
   - sr == 1 ?
-The vampire looks intrigued. "Oooo what a fun little cake. But what's this, in the middle?" You explain what jam is but the vampire seems a little bemused. It doesn't quite suit his palate.{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
+Вампир выглядит заинтересованным. "Ооо, какой необычный маленький тортик. Но что это у него внутри?". Ты объясняешь ему, что такое варенье, но вампир выглядит немного озадаченным. Это не совсем в его вкусе.{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
 }
 """
 
@@ -16811,17 +16811,17 @@ DLG SPR_1a
 """
 {
   - srwb == 1 ?
-The vampire looks delighted. "Oooo what a fun little cake. Thank you, baker." He leaves with a huge grin.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
+Вампир в восторге. "Ооо, какой забавный маленький тортик". Спасибо! Он уходит с широкой улыбкой.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
   - scwb == 1 ?
-The vampire thanks you, but he looks as though he wanted something a bit more interesting. He leaves.{score = score + 2}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
+Вампир благодарит тебя, но, кажется, он надеялся на что-то необычное. Он уходит.{score = score + 2}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
   - scwj == 1 ?
-The vampire looks disapointed. "Hmm, this doesn't look particularly fun." He's not a fan of the jam. He leaves dissatisfied.{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
+Вампир выглядит разочарованным. "Хмм, это не выглядит интересно". Ему не понравилось. Он уходит недовольным.{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
 {
   - frog == 1 ?
-The frog croaks at you in a judgemental tone.
+Лягушка осуждающе квакает в вашу сторону.
 }
   - sr == 1 ?
-The vampire looks intrigued. "Oooo what a fun little cake. But what's this, in the middle?" You explain what jam is but the vampire seems a little bemused. It doesn't quite suit his palate.{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
+Вампир выглядит заинтересованным. "Ооо, какой необычный маленький тортик. Но что это у него внутри?". Ты объясняешь ему, что такое варенье, но вампир выглядит немного озадаченным. Это не совсем в его вкусе.{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{fun = 0}{boring = 0}{jam = 0}{blood = 0}{srwb = 0}{scwb = 0}{scwj = 0}{sr = 0}(exit "cat,3,12")
 }
 """
 
