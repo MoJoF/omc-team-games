@@ -17346,27 +17346,27 @@ DLG SPR_2h
 """
 
 DLG SPR_2i
-A strange being fills the bakery. "Cower before me, mere mortal! For I am Xzagaroth, destroyer of worlds." You ask him if he'd like a cake. He scoffs at you. "No human food could ever possibly satiate me. Let us have a competition. If you, puny being, could create a dish to satisfy me I will spare you and your insignificant world." (exit "bakeryxzag,7,8")
+Странное существо заходит в пекарню. "Трепещи передо мной, жалкий смертный! Ибо я Ксзагарот, разрушитель миров.". Вы спрашиваете, не хочет ли он торт. Он презрительно усмехается. "Никакая человеческая еда не способна утолить мой голод. Давай устроим соревнование. Если ты, ничтожное создание, сможешь приготовить блюдо, которое меня удовлетворит, я пощажу тебя и твой ничтожный мир." (exit "bakeryxzag,7,8")
 
 DLG SPR_2j
-A strange being fills the bakery. "Cower before me, mere mortal! For I am Xzagaroth, destroyer of worlds." You ask him if he'd like a cake. He scoffs at you. "No human food could ever possibly satiate me. Let us have a competition. If you, puny being, could create a dish to satisfy me I will spare you and your insignificant world." (exit "bakeryxzag,7,8")
+Странное существо заходит в пекарню. "Трепещи передо мной, жалкий смертный! Ибо я Ксзагарот, разрушитель миров.". Вы спрашиваете, не хочет ли он торт. Он презрительно усмехается. "Никакая человеческая еда не способна утолить мой голод. Давай устроим соревнование. Если ты, ничтожное создание, сможешь приготовить блюдо, которое меня удовлетворит, я пощажу тебя и твой ничтожный мир." (exit "bakeryxzag,7,8")
 
 DLG SPR_2k
-A strange being fills the bakery. "Cower before me, mere mortal! For I am Xzagaroth, destroyer of worlds." You ask him if he'd like a cake. He scoffs at you. "No human food could ever possibly satiate me. Let us have a competition. If you, puny being, could create a dish to satisfy me I will spare you and your insignificant world." (exit "bakeryxzag,7,8")
+Странное существо заходит в пекарню. "Трепещи передо мной, жалкий смертный! Ибо я Ксзагарот, разрушитель миров.". Вы спрашиваете, не хочет ли он торт. Он презрительно усмехается. "Никакая человеческая еда не способна утолить мой голод. Давай устроим соревнование. Если ты, ничтожное создание, сможешь приготовить блюдо, которое меня удовлетворит, я пощажу тебя и твой ничтожный мир." (exit "bakeryxzag,7,8")
 
 DLG SPR_2l
-A strange being fills the bakery. "Cower before me, mere mortal! For I am Xzagaroth, destroyer of worlds." You ask him if he'd like a cake. He scoffs at you. "No human food could ever possibly satiate me. Let us have a competition. If you, puny being, could create a dish to satisfy me I will spare you and your insignificant world." (exit "bakeryxzag,7,8")
+Странное существо заходит в пекарню. "Трепещи передо мной, жалкий смертный! Ибо я Ксзагарот, разрушитель миров.". Вы спрашиваете, не хочет ли он торт. Он презрительно усмехается. "Никакая человеческая еда не способна утолить мой голод. Давай устроим соревнование. Если ты, ничтожное создание, сможешь приготовить блюдо, которое меня удовлетворит, я пощажу тебя и твой ничтожный мир." (exit "bakeryxzag,7,8")
 
 DLG SPR_2m
 """
 {
   - step1 == 0 ?
-You find a compartment at the back of the pantry dedicated to excessively powerful invaders from other worlds. There are two types of cake bases to choose from, light or dark. Which do you choose?
+В кладовой вы находите отсек для могущественных клиентов из других миров. На выбор есть две основы для торта: светлая и тёмная. Что выберете?
 {choice
-	- Light
-	  You choose a light base. {light = 1} {step1 = 1}
-	- Dark
-	  You choose a dark base. {dark = 1} {step1 = 1}
+	- Светлая
+	  Вы выбираете светлую основа. {light = 1} {step1 = 1}
+	- Тёмная
+	  Вы выбираете тёмную основу. {dark = 1} {step1 = 1}
 }
 
   - else ?
@@ -17382,12 +17382,12 @@ DLG SPR_2n
   - step1 == 0 ?
 Перед готовкой нужно добавить ингредиенты.
   - step2 == 0 ?
-You can pick accent ingredients for your cake. You decision will literally shape the fate of the world. No pressure.
+Вы можете выбрать особые ингредиенты для торта. Этот выбор буквально решит судьбу мира.
 {choice
-	- Add light, airy ingredients
-	  You add pure and light ingredients to hopefully warm your customer's heart.{laccent = 1} {step2 = 1}
-	- Add dark, heavy ingredients
-	  You add deep and dark ingredients to add power to your cake.{daccent = 1}{step2 = 1}
+	- Добавить лёгкие и воздушные ингредиенты
+	  Вы добавляете чистые и светлые ингредиенты, надеясь, что ему понравится. {laccent = 1} {step2 = 1}
+	- Добавить мрачные и плотные ингредиенты
+	  Вы добавляете мрачные ингредиенты, надеясь усилить свой торт. {daccent = 1}{step2 = 1}
 }
   - else ?
 Вы уже добавили ингредиенты.
