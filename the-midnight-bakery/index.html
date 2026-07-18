@@ -16361,7 +16361,7 @@ DLG SPR_6
 Пришёл первый клиент. (exit "witch,3,12")
 
 DLG SPR_8
-Ведьма подходит к прилавку. "Добрый вечер! Ты, должно быть, Джей. Твоя тётя много о тебе рассказывала. Меня зовут Чез. Сделай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
+Ведьма подходит к прилавку. "Привет! Ты, должно быть, Джей? Твоя тётя много о тебе рассказывала. Меня зовут Чез. Сделай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
 
 DLG SPR_9
 """
@@ -16419,9 +16419,9 @@ DLG SPR_c
 	- Тёмно-красная вишня
 	 Вы добавили вишню. {cherries = 1}
 {  - vanilla == 1 ?
-Ваш торт Готово! Вы приготовили торт "Белый лес". {wfg = 1}{step3 = 1} 
+Готово! Вы приготовили торт "Белый лес". {wfg = 1}{step3 = 1} 
   - cherries == 1 ?
-Ваш торт Готово! Вы приготовили торт "Чёрный лес". {bfg = 1}{step3 = 1}
+Готово! Вы приготовили торт "Чёрный лес". {bfg = 1}{step3 = 1}
 }
 	- Миниатюрный лес
 	 Вы добавляете на торт деревья. Ваш торт готов! Это самый настоящий "Лес". {lfg = 1}{step3 = 1}
@@ -16483,13 +16483,13 @@ DLG SPR_h
 """
 
 DLG SPR_i
-Ведьма подходит к прилавку. "Добрый вечер! Ты, должно быть, Джей. Твоя тётя много о тебе рассказывала. Меня зовут Чез. Сделай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
+Ведьма подходит к прилавку. "Привет! Ты, должно быть, Джей? Твоя тётя много о тебе рассказывала. Меня зовут Чез. Сделай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
 
 DLG SPR_j
-Ведьма подходит к прилавку. "Добрый вечер! Ты, должно быть, Джей. Твоя тётя много о тебе рассказывала. Меня зовут Чез. Сделай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
+Ведьма подходит к прилавку. "Привет! Ты, должно быть, Джей? Твоя тётя много о тебе рассказывала. Меня зовут Чез. Сделай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
 
 DLG SPR_k
-Ведьма подходит к прилавку. "Добрый вечер! Ты, должно быть, Джей. Твоя тётя много о тебе рассказывала. Меня зовут Чез. Сделай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
+Ведьма подходит к прилавку. "Привет! Ты, должно быть, Джей? Твоя тётя много о тебе рассказывала. Меня зовут Чез. Сделай мне, пожалуйста, чего-нибудь тёмного и сладкого." (exit "bakerywitch,7,8")
 
 DLG SPR_l
 """
@@ -16549,7 +16549,7 @@ DLG SPR_q
   - step1 == 0 ?
 Перед готовкой нужно добавить ингредиенты.
   - else ?
-Вы тщательно смешали ингредиенты. Кажется, нужно ещё что-то добавить, что сделать кекс поинтереснее.
+Вы тщательно смешали ингредиенты. Кажется, нужно ещё что-то добавить, чтобы сделать кекс поинтереснее.
 {choice
 	- Добавить крем-сыр {goey = 1}
 	  Вы добавляете крем-сыр.{creamcheese = 1} {step2 = 1}
@@ -16583,7 +16583,7 @@ DLG SPR_s
   - bvc == 1 ?
 Выглядит очень аппетитно. Спасибо! Он уходит с улыбкой.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
   - funordeath == 1 ?
-Путница настороженно смотрит на кекс. Она слегка колеблется. После недолгих колебаний она, всё же, откусывает кусочек. Подозрение быстро сменяется восторгом. "Как вкусно!". Восклицает она и за несколько укусов доедает весь кусок. Кажется, всё идёт прекрасно... пока она внезапно не исчезает в облаке радужного дыма. И... О нет... Она превратилась в лягушку. Она укоризненно квакает, глядя на тебя. {frog = 1}{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
+Путница настороженно смотрит на кекс. Она слегка колеблется. После недолгих колебаний она, всё же, откусывает кусочек. Подозрение быстро сменяется восторгом. "Как вкусно!". Восклицает она и за несколько укусов доедает весь кусок. Кажется, всё идёт прекрасно... пока она внезапно не исчезает в облаке радужного дыма. И... О нет... Она превратилась в лягушку! Она укоризненно квакает, глядя на тебя. {frog = 1}{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
 }
 """
 
@@ -16606,7 +16606,7 @@ DLG SPR_u
   - bvc == 1 ?
 Выглядит очень аппетитно. Спасибо! Он уходит с улыбкой.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
   - funordeath == 1 ?
-Путница настороженно смотрит на торт. Он слегка вибрирует. После недолгих колебаний она всё же откусывает кусочек. Подозрение быстро сменяется восторгом. "Как вкусно!". Восклицает она и за несколько укусов доедает весь кусок. Кажется, всё идёт прекрасно... пока она внезапно не исчезает в облаке радужного дыма. И... О нет... Она превратилась в лягушку. Она укоризненно квакает, глядя на тебя. {frog = 1}{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
+Путница настороженно смотрит на торт. Она слегка колеблется, но откусывает кусочек. Подозрение быстро сменяется восторгом. "Как вкусно!". Восклицает она и за несколько укусов доедает весь кусок. Кажется, всё идёт прекрасно... пока она внезапно не исчезает в облаке радужного дыма. И... О нет... Она превратилась в лягушку! Она укоризненно квакает, глядя на тебя. {frog = 1}{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
 }
 """
 
@@ -16618,7 +16618,7 @@ DLG SPR_v
   - bvc == 1 ?
 Выглядит очень аппетитно. Спасибо! Он уходит с улыбкой.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
   - funordeath == 1 ?
-Путница настороженно смотрит на торт. Он слегка вибрирует. После недолгих колебаний она всё же откусывает кусочек. Подозрение быстро сменяется восторгом. "Как вкусно!". Восклицает она и за несколько укусов доедает весь кусок. Кажется, всё идёт прекрасно... пока она внезапно не исчезает в облаке радужного дыма. И... О нет... Она превратилась в лягушку. Она укоризненно квакает, глядя на тебя. {frog = 1}{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
+Путница настороженно смотрит на торт. Она слегка колеблется, но откусывает кусочек. Подозрение быстро сменяется восторгом. "Как вкусно!". Восклицает она и за несколько укусов доедает весь кусок. Кажется, всё идёт прекрасно... пока она внезапно не исчезает в облаке радужного дыма. И... О нет... Она превратилась в лягушку! Она укоризненно квакает, глядя на тебя. {frog = 1}{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
 }
 """
 
@@ -16630,7 +16630,7 @@ DLG SPR_w
   - bvc == 1 ?
 Выглядит очень аппетитно. Спасибо! Он уходит с улыбкой.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
   - funordeath == 1 ?
-Путница настороженно смотрит на торт. Он слегка вибрирует. После недолгих колебаний она всё же откусывает кусочек. Подозрение быстро сменяется восторгом. "Как вкусно!". Восклицает она и за несколько укусов доедает весь кусок. Кажется, всё идёт прекрасно... пока она внезапно не исчезает в облаке радужного дыма. И... О нет... Она превратилась в лягушку. Она укоризненно квакает, глядя на тебя. {frog = 1}{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
+Путница настороженно смотрит на торт. Она слегка колеблется, но откусывает кусочек. Подозрение быстро сменяется восторгом. "Как вкусно!". Восклицает она и за несколько укусов доедает весь кусок. Кажется, всё идёт прекрасно... пока она внезапно не исчезает в облаке радужного дыма. И... О нет... Она превратилась в лягушку! Она укоризненно квакает, глядя на тебя. {frog = 1}{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{vial = 0}{creamcheese = 0}{icing = 0}{funordeath = 0}{bvc = 0}{gbc = 0}(exit "vampire,3,12")
 }
 """
 
@@ -16996,7 +16996,7 @@ DLG SPR_1s
 	- Спросить
 	  Вы нерешительно спрашиваете его. "Чепуха! Я унимен". Он отказывается что-либо объяснять. "Я хотел бы торт, достойный моего рода. Что-нибудь прекрасное и величественное." (exit "bakeryuni,7,8")
 	- Не поднимать эту тему
-	  Вы решаете не акцентировать на этом внимание. В конце концов вы спрашиваете его. "Чепуха! Я унимен". Он отказывается что-либо объяснять. "Я хотел бы торт, достойный моего рода. Что-нибудь прекрасное и величественное." (exit "bakeryuni,7,8")
+	  Сперва вы не акцентируете на этом внимание, но потом спрашиваете его. "Чепуха! Я унимен". Он отказывается что-либо объяснять. "Я хотел бы торт, достойный моего рода. Что-нибудь прекрасное и величественное." (exit "bakeryuni,7,8")
 }
 """
 
@@ -17004,12 +17004,12 @@ DLG SPR_1t
 """
 {
   - step1 == 0 ?
-Something fit for a unicor- uniman. Hmm there's a lot of food colouring here and there's also some glitter. (You're not sure if it's food safe though.) Which do you choose?
+Вы думаете, что приготовить. Вы нашли много пищевого красителя и ещё немного блёсток (хотя это может быть вредно для торта.) Что хотите добавить?
 {choice
-	- Glitter
-	  You pour glitter into your batter. {glitter = 1} {step1 = 1}
-	- Food colouring
-	  You add the food colouring to your cake. {colour = 1} {step1 = 1}
+	- Блёстки
+	  Вы добавляете блёстки в тесто. {glitter = 1} {step1 = 1}
+	- Красители
+	  Вы добавляете пищевой краситель. {colour = 1} {step1 = 1}
 }
 
   - else ?
@@ -17027,14 +17027,14 @@ DLG SPR_1u
   - else ?
 {
   - glitter == 1 ?
-You mix your ingredients carefully. Your cake is looking very sparkly. Perfect for a unic- uniman.{step2 = 1}
+Вы тщательно перемешиваете ингредиенты. Получился блестящий торт. Идельно!{step2 = 1}
   - colour == 1 ?
-You mix your ingredients carefully. Now to decide; do you put your colours on the outside or the inside of your cake?
+Вы тщательно смешиваете ингредиенты. Теперь надо решить, вы нанесёте краситель снаружи или внутри?
 {choice
-	- Outside
-	  You decide to put the colour on full display. {outside = 1} {step2 = 1}
-	- Inside
-	  You decide to hide the colour inside the cake for a special surprise.{inside = 1}{step2 = 1}
+	- Снаружи
+	  Вы нанесли краситель снаружи. {outside = 1} {step2 = 1}
+	- Внутри
+	  Вы нанесли краситель внутри. Пусть это будет для него сюрпризом. {inside = 1}{step2 = 1}
 }
 }
 """
@@ -17047,11 +17047,11 @@ DLG SPR_1v
   - step3 == 1 ?
 Вы уже испекли торт.
   - outside == 1 ?
-You cook your cake. It's finished! You made a confetti cake. It's wonderfully colourful. {confetti = 1}{step3 = 1} 
+Готово! Вы сделали торт с конфетти. Он получился очень красивым. {confetti = 1}{step3 = 1} 
   - inside == 1 ?
-You cook your cake. It's finished! You made a rainbow marble cake. It looks like a plain white cake from the outside, but inside it's a rainbow. {marble = 1}{step3 = 1}
+Готово! Вы сделали мраморный торт с радужными цветами. Снаружи он белый, а вот внутри... {marble = 1}{step3 = 1}
   - glitter == 1 ?
-You cook your cake. It's finished! You made a glitter cake. It's so sparkly. {glittercake = 1}{step3 = 1}
+Готово! Вы испекли сверкающий торт. {glittercake = 1}{step3 = 1}
 }
 """
 
@@ -17070,13 +17070,13 @@ DLG SPR_1x
 """
 {
   - confetti == 1 ?
-    You give the uniman a slice of confetti cake.(exit "uniman2,3,12")
+    Вы протягиваете единорогу торт-конфетти.(exit "uniman2,3,12")
   - marble == 1 ?
-    You give the uniman the rainbow marble cake.(exit "uniman2,3,12")
+    Вы протягиваете единорогу радужно-мраморный торт.(exit "uniman2,3,12")
   - glittercake == 1 ?
-    You give the uniman a slice of glitter cake.(exit "uniman2,3,12")
+    Вы протягиваете единорогу сверкающий торт.(exit "uniman2,3,12")
   - else ?
-"Something beautiful and majestic."
+"Что-нибудь красивое и величественное."
 }
 """
 
@@ -17084,11 +17084,11 @@ DLG SPR_1y
 """
 {
   - confetti == 1 ?
-The uniman applauds. "Wonderful, truly a manifestation of the hearts of unimen everywhere." He gives you a tip before leaving. {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
+Единорог апплодирует. "Чудесно! Восхитительный торт!". Он даёт вам чаевые и уходит. {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
   - marble == 1 ?
-The uniman doesn't look impressed when he sees the plain white cake. Before he can comment, you cut it open to reveal the rainbow within. The uniman gasps. "Magnificent! Truly a thing of beauty." He gives you a tip before leaving.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
+Единорог выглядит разочарованным. Но как только вы отрезаете кусок, он ахает. "Великолепно! Отличная работа!". Он оставляет чаевые и уходит.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
   - glitter == 1 ?
-The uniman looks impressed. "What a magnificent cake. It sparkles like the sun!" He enthusiastically takes a bite... Only to start coughing it out again as soon as the glitter hits the back of his throat. "Is this even safe to eat?" He demands. You probably should have looked into that more thoroughly. He storms out.{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
+Он впечатлён. "Какой великолепный торт! Он сверкает словно солнце!". Единорог откусывает... но тут же начинает кашлять. "Что это такое? Это нельзя есть!". В гневе он уходит из пекарни.{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
 }
 """
 
@@ -17096,11 +17096,11 @@ DLG SPR_1z
 """
 {
   - confetti == 1 ?
-The uniman applauds. "Wonderful, truly a manifestation of the hearts of unimen everywhere." He gives you a tip before leaving. {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
+Единорог апплодирует. "Чудесно! Восхитительный торт!". Он даёт вам чаевые и уходит. {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
   - marble == 1 ?
-The uniman doesn't look impressed when he sees the plain white cake. Before he can comment, you cut it open to reveal the rainbow within. The uniman gasps. "Magnificent! Truly a thing of beauty." He gives you a tip before leaving.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
+Единорог выглядит разочарованным. Но как только вы отрезаете кусок, он ахает. "Великолепно! Отличная работа!". Он оставляет чаевые и уходит.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
   - glitter == 1 ?
-The uniman looks impressed. "What a magnificent cake. It sparkles like the sun!" He enthusiastically takes a bite... Only to start coughing it out again as soon as the glitter hits the back of his throat. "Is this even safe to eat?" He demands. You probably should have looked into that more thoroughly. He storms out.{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
+Он впечатлён. "Какой великолепный торт! Он сверкает словно солнце!". Единорог откусывает... но тут же начинает кашлять. "Что это такое? Это нельзя есть!". В гневе он уходит из пекарни.{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
 }
 """
 
@@ -17108,11 +17108,11 @@ DLG SPR_20
 """
 {
   - confetti == 1 ?
-The uniman applauds. "Wonderful, truly a manifestation of the hearts of unimen everywhere." He gives you a tip before leaving. {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
+Единорог апплодирует. "Чудесно! Восхитительный торт!". Он даёт вам чаевые и уходит. {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
   - marble == 1 ?
-The uniman doesn't look impressed when he sees the plain white cake. Before he can comment, you cut it open to reveal the rainbow within. The uniman gasps. "Magnificent! Truly a thing of beauty." He gives you a tip before leaving.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
+Единорог выглядит разочарованным. Но как только вы отрезаете кусок, он ахает. "Великолепно! Отличная работа!". Он оставляет чаевые и уходит.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
   - glitter == 1 ?
-The uniman looks impressed. "What a magnificent cake. It sparkles like the sun!" He enthusiastically takes a bite... Only to start coughing it out again as soon as the glitter hits the back of his throat. "Is this even safe to eat?" He demands. You probably should have looked into that more thoroughly. He storms out.{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
+Он впечатлён. "Какой великолепный торт! Он сверкает словно солнце!". Единорог откусывает... но тут же начинает кашлять. "Что это такое? Это нельзя есть!". В гневе он уходит из пекарни.{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
 }
 """
 
@@ -17120,36 +17120,36 @@ DLG SPR_21
 """
 {
   - confetti == 1 ?
-The uniman applauds. "Wonderful, truly a manifestation of the hearts of unimen everywhere." He gives you a tip before leaving. {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
+Единорог апплодирует. "Чудесно! Восхитительный торт!". Он даёт вам чаевые и уходит. {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
   - marble == 1 ?
-The uniman doesn't look impressed when he sees the plain white cake. Before he can comment, you cut it open to reveal the rainbow within. The uniman gasps. "Magnificent! Truly a thing of beauty." He gives you a tip before leaving.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
+Единорог выглядит разочарованным. Но как только вы отрезаете кусок, он ахает. "Великолепно! Отличная работа!". Он оставляет чаевые и уходит.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
   - glitter == 1 ?
-The uniman looks impressed. "What a magnificent cake. It sparkles like the sun!" He enthusiastically takes a bite... Only to start coughing it out again as soon as the glitter hits the back of his throat. "Is this even safe to eat?" He demands. You probably should have looked into that more thoroughly. He storms out.{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
+Он впечатлён. "Какой великолепный торт! Он сверкает словно солнце!". Единорог откусывает... но тут же начинает кашлять. "Что это такое? Это нельзя есть!". В гневе он уходит из пекарни.{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{glitter = 0}{colour = 0}{outside = 0}{inside = 0}{confetti = 0}{marble = 0}{glittercake = 0}(exit "ghost,3,12")
 }
 """
 
 DLG SPR_22
-A ghost approaches the counter. He's holding a sign that says 'Boo!'. You take that to mean he wants a spooky cake. (exit "bakeryghost,7,8")
+К прилавку подходит призрак. Он держит табличку с надписью "Бу!". Вы понимаете, что он хочет жуткий торт.(exit "bakeryghost,7,8")
 
 DLG SPR_23
-A ghost approaches the counter. He's holding a sign that says 'Boo!'. You take that to mean he wants a spooky cake. (exit "bakeryghost,7,8")
+К прилавку подходит призрак. Он держит табличку с надписью "Бу!". Вы понимаете, что он хочет жуткий торт.(exit "bakeryghost,7,8")
 
 DLG SPR_24
-A ghost approaches the counter. He's holding a sign that says 'Boo!'. You take that to mean he wants a spooky cake. (exit "bakeryghost,7,8")
+К прилавку подходит призрак. Он держит табличку с надписью "Бу!". Вы понимаете, что он хочет жуткий торт.(exit "bakeryghost,7,8")
 
 DLG SPR_25
-A ghost approaches the counter. He's holding a sign that says 'Boo!'. You take that to mean he wants a spooky cake. (exit "bakeryghost,7,8")
+К прилавку подходит призрак. Он держит табличку с надписью "Бу!". Вы понимаете, что он хочет жуткий торт.(exit "bakeryghost,7,8")
 
 DLG SPR_26
 """
 {
   - step1 == 0 ?
-How do you make cake for a ghost? You can make it first and then kill it afterwards to get the ghost of a cake or use a ghost cake mix you found in the pantry. What method do you use?
+Как приготовить торт для призрака? Сначала испечь его, а потом убить? Или использовать смесь для призрачных тортов?
 {choice
-	- Make from packet
-	  You decide to play it safe and make it from the packet. {packet = 1} {step1 = 1}
-	- Make and then kill
-	  You decide to make it the old fashioned way. {kill = 1} {step1 = 1}
+	- Использовать смесь
+	  Вы решаете не рисковать и использовать смесь. {packet = 1} {step1 = 1}
+	- Приготовить, а потом убить
+	  Вы решаете приготовить как обычно. {kill = 1} {step1 = 1}
 }
   - else ?
 Вы уже добавили ингредиенты.
@@ -17166,14 +17166,14 @@ DLG SPR_27
   - else ?
 {
   - packet == 1 ?
-It's easy making the ghost cake from the packet, you feel bad for not putting that much effort in.{step2 = 1}
+Приготовить торт из смеси оказалось очень просто. Без лишних усилий. {step2 = 1}
   - kill == 1 ?
-Your cake is nearly done. Now you just need to decide how to kill it once it's finished.
+Ваш торт почти готов. Теперь вам осталось только решить, как его убить.
 {choice
-	- Hammer
-	  You decide to beat it to death with a hammer. The cake quickly turns into a pulp but you're able to grab the shimmering outline of it's ghost. {hammer = 1}{outside = 1} {step2 = 1}
-	- Flamethrower
-	  You're not sure why your aunt keeps a flamethrower in her bakery but you've always wanted to use one of these. WOOOOOOOSH. The cake is burnt to a crisp and you're able to grab it's shimmering ghost.{flamethrower = 1}{inside = 1}{step2 = 1}
+	- Разбить молотком
+	  Вы решаете забить торт до смерти молотком. Торт умирает и вы ухватываете его призрак. {hammer = 1}{outside = 1} {step2 = 1}
+	- Сжечь
+	  Вы не понимаете, зачем ваша тётя держит огнемёт в пекарне, но всегда мечтали им воспользоваться. ВЖУХ! Торт сгорел дотла, и вы хватаете его призрака.{flamethrower = 1}{inside = 1}{step2 = 1}
 }
 }
 """
@@ -17186,11 +17186,11 @@ DLG SPR_28
   - step3 == 1 ?
 Вы уже испекли торт.
   - packet == 1 ?
-It's finished! You made a packet ghost cake. It's shimmery. {pgc = 1}{step3 = 1} 
+Готово! Вы приготовили торт из смеси. Он немного блестит. {pgc = 1}{step3 = 1} 
   - hammer == 1 ?
-It's finished! You made a homemade ghost cake.{hgc = 1}{step3 = 1}
+Готово! Вы испекли призрачный торт по-домашнему.{hgc = 1}{step3 = 1}
   - flamethrower == 1 ?
-It's finished! You made a slightly singed ghost cake. It's still smoking a little {ssgc = 1}{step3 = 1}
+Готово! Вы испекли слегка подгоревший торт в виде привидения. Из него исходит дым. {ssgc = 1}{step3 = 1}
 }
 
 """
@@ -17210,13 +17210,13 @@ DLG SPR_2a
 """
 {
   - pgc == 1 ?
-    You give the ghost a slice of packet ghost cake.(exit "ghost2,3,12")
+    Вы протягиваете призраку идеальный призрачный торт.(exit "ghost2,3,12")
   - hgc == 1 ?
-    You give the ghost a slice of homemade ghost cake.(exit "ghost2,3,12")
+    Вы протягиваете призрачный торт по-домашнему. (exit "ghost2,3,12")
   - ssgc == 1 ?
-    You give the ghost a slice of slightly singed ghost cake.(exit "ghost2,3,12")
+    Вы даёте призраку слегка подгоревший торт. (exit "ghost2,3,12")
   - else ?
-The ghost points to his 'Boo!' sign and excitedly sways from side to side.
+Призрак указывает на табличку и возбужденно раскачивается из стороны в сторону.
 }
 """
 
@@ -17224,22 +17224,22 @@ DLG SPR_2b
 """
 {
   - pgc == 1 ?
-The ghost excitedly eats the cake. He writes something on the back of his 'Boo!' sign. It says 9/10. He floats happily out of the bakery. Your next customer arrives. 
+Призрак с восторгом ест торт. Он что-то пишет на обратной стороне таблички. Призрак показывается 9/10. Радостно он выходит из пекарни. Заходит следующий клиент. 
  {score = score + 2}{step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}(exit "xzagaroth,3,12")
 {
   - frog == 1 ?
-The frog croaks anxiously. He can sense something coming.}
+Лягушка встревоженно квакает.}
   - hgc == 1 ?
-The ghost loves the cake. He draws something on the back of his 'Boo!' sign. It's a heart. He floats happily out of the bakery. Your next customer arrives. 
+Призрак в восторге. На обратной стороне он рисует сердечко и показывает вам. Радостно он выходит из пекарни. Заходит следующий клиент. 
  {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}(exit "xzagaroth,3,12")
 {  - frog == 1 ?
-The frog croaks anxiously. He can sense something coming.}
+Лягушка встревоженно квакает.}
   - ssgc == 1 ?
-The ghost looks at the cake and then back at you. And then back at the cake. It's started smoking again. He seems unhappy and starts haunting the bakery. He's still sulking when your next customer arrives. 
+Призрак смотрит на торт. Потом на вас. Потом снова на торт. Он дуется и уходит. Приходит следующий клиент.
  {score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}{ghost = 1}(exit "xzagaroth,3,12")
 {
   - frog == 1 ?
-The frog croaks anxiously. He can sense something coming.}
+Лягушка встревоженно квакает.}
 }
 """
 
@@ -17247,22 +17247,22 @@ DLG SPR_2c
 """
 {
   - pgc == 1 ?
-The ghost excitedly eats the cake. He writes something on the back of his 'Boo!' sign. It says 9/10. He floats happily out of the bakery. Your next customer arrives. 
+Призрак с восторгом ест торт. Он что-то пишет на обратной стороне таблички. Призрак показывается 9/10. Радостно он выходит из пекарни. Заходит следующий клиент. 
  {score = score + 2}{step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}(exit "xzagaroth,3,12")
 {
   - frog == 1 ?
-The frog croaks anxiously. He can sense something coming.}
+Лягушка встревоженно квакает.}
   - hgc == 1 ?
-The ghost loves the cake. He draws something on the back of his 'Boo!' sign. It's a heart. He floats happily out of the bakery. Your next customer arrives. 
+Призрак в восторге. На обратной стороне он рисует сердечко и показывает вам. Радостно он выходит из пекарни. Заходит следующий клиент. 
  {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}(exit "xzagaroth,3,12")
 {  - frog == 1 ?
-The frog croaks anxiously. He can sense something coming.}
+Лягушка встревоженно квакает.}
   - ssgc == 1 ?
-The ghost looks at the cake and then back at you. And then back at the cake. It's started smoking again. He seems unhappy and starts haunting the bakery. He's still sulking when your next customer arrives. 
+Призрак смотрит на торт. Потом на вас. Потом снова на торт. Он дуется и уходит. Приходит следующий клиент.
  {score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}{ghost = 1}(exit "xzagaroth,3,12")
 {
   - frog == 1 ?
-The frog croaks anxiously. He can sense something coming.}
+Лягушка встревоженно квакает.}
 }
 """
 
@@ -17270,22 +17270,22 @@ DLG SPR_2d
 """
 {
   - pgc == 1 ?
-The ghost excitedly eats the cake. He writes something on the back of his 'Boo!' sign. It says 9/10. He floats happily out of the bakery. Your next customer arrives. 
+Призрак с восторгом ест торт. Он что-то пишет на обратной стороне таблички. Призрак показывается 9/10. Радостно он выходит из пекарни. Заходит следующий клиент. 
  {score = score + 2}{step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}(exit "xzagaroth,3,12")
 {
   - frog == 1 ?
-The frog croaks anxiously. He can sense something coming.}
+Лягушка встревоженно квакает.}
   - hgc == 1 ?
-The ghost loves the cake. He draws something on the back of his 'Boo!' sign. It's a heart. He floats happily out of the bakery. Your next customer arrives. 
+Призрак в восторге. На обратной стороне он рисует сердечко и показывает вам. Радостно он выходит из пекарни. Заходит следующий клиент. 
  {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}(exit "xzagaroth,3,12")
 {  - frog == 1 ?
-The frog croaks anxiously. He can sense something coming.}
+Лягушка встревоженно квакает.}
   - ssgc == 1 ?
-The ghost looks at the cake and then back at you. And then back at the cake. It's started smoking again. He seems unhappy and starts haunting the bakery. He's still sulking when your next customer arrives. 
+Призрак смотрит на торт. Потом на вас. Потом снова на торт. Он дуется и уходит. Приходит следующий клиент.
  {score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}{ghost = 1}(exit "xzagaroth,3,12")
 {
   - frog == 1 ?
-The frog croaks anxiously. He can sense something coming.}
+Лягушка встревоженно квакает.}
 }
 """
 
@@ -17293,22 +17293,22 @@ DLG SPR_2e
 """
 {
   - pgc == 1 ?
-The ghost excitedly eats the cake. He writes something on the back of his 'Boo!' sign. It says 9/10. He floats happily out of the bakery. Your next customer arrives. 
+Призрак с восторгом ест торт. Он что-то пишет на обратной стороне таблички. Призрак показывается 9/10. Радостно он выходит из пекарни. Заходит следующий клиент. 
  {score = score + 2}{step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}(exit "xzagaroth,3,12")
 {
   - frog == 1 ?
-The frog croaks anxiously. He can sense something coming.}
+Лягушка встревоженно квакает.}
   - hgc == 1 ?
-The ghost loves the cake. He draws something on the back of his 'Boo!' sign. It's a heart. He floats happily out of the bakery. Your next customer arrives. 
+Призрак в восторге. На обратной стороне он рисует сердечко и показывает вам. Радостно он выходит из пекарни. Заходит следующий клиент. 
  {score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}(exit "xzagaroth,3,12")
 {  - frog == 1 ?
-The frog croaks anxiously. He can sense something coming.}
+Лягушка встревоженно квакает.}
   - ssgc == 1 ?
-The ghost looks at the cake and then back at you. And then back at the cake. It's started smoking again. He seems unhappy and starts haunting the bakery. He's still sulking when your next customer arrives. 
+Призрак смотрит на торт. Потом на вас. Потом снова на торт. Он дуется и уходит. Приходит следующий клиент.
  {score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}{ghost = 1}(exit "xzagaroth,3,12")
 {
   - frog == 1 ?
-The frog croaks anxiously. He can sense something coming.}
+Лягушка встревоженно квакает.}
 }
 """
 
@@ -17319,7 +17319,7 @@ DLG SPR_2f
 	- Спросить
 	  Вы нерешительно спрашиваете его. "Чепуха! Я унимен". Он отказывается что-либо объяснять. "Я хотел бы торт, достойный моего рода. Что-нибудь прекрасное и величественное." (exit "bakeryuni,7,8")
 	- Не поднимать эту тему
-	  Вы решаете не акцентировать на этом внимание. В конце концов вы спрашиваете его. "Чепуха! Я унимен". Он отказывается что-либо объяснять. "Я хотел бы торт, достойный моего рода. Что-нибудь прекрасное и величественное." (exit "bakeryuni,7,8")
+	  Сперва вы не акцентируете на этом внимание, но потом спрашиваете его. "Чепуха! Я унимен". Он отказывается что-либо объяснять. "Я хотел бы торт, достойный моего рода. Что-нибудь прекрасное и величественное." (exit "bakeryuni,7,8")
 }
 """
 
@@ -17330,7 +17330,7 @@ DLG SPR_2g
 	- Спросить
 	  Вы нерешительно спрашиваете его. "Чепуха! Я унимен". Он отказывается что-либо объяснять. "Я хотел бы торт, достойный моего рода. Что-нибудь прекрасное и величественное." (exit "bakeryuni,7,8")
 	- Не поднимать эту тему
-	  Вы решаете не акцентировать на этом внимание. В конце концов вы спрашиваете его. "Чепуха! Я унимен". Он отказывается что-либо объяснять. "Я хотел бы торт, достойный моего рода. Что-нибудь прекрасное и величественное." (exit "bakeryuni,7,8")
+	  Сперва вы не акцентируете на этом внимание, но потом спрашиваете его. "Чепуха! Я унимен". Он отказывается что-либо объяснять. "Я хотел бы торт, достойный моего рода. Что-нибудь прекрасное и величественное." (exit "bakeryuni,7,8")
 }
 """
 
@@ -17341,7 +17341,7 @@ DLG SPR_2h
 	- Спросить
 	  Вы нерешительно спрашиваете его. "Чепуха! Я унимен". Он отказывается что-либо объяснять. "Я хотел бы торт, достойный моего рода. Что-нибудь прекрасное и величественное." (exit "bakeryuni,7,8")
 	- Не поднимать эту тему
-	  Вы решаете не акцентировать на этом внимание. В конце концов вы спрашиваете его. "Чепуха! Я унимен". Он отказывается что-либо объяснять. "Я хотел бы торт, достойный моего рода. Что-нибудь прекрасное и величественное." (exit "bakeryuni,7,8")
+	  Сперва вы не акцентируете на этом внимание, но потом спрашиваете его. "Чепуха! Я унимен". Он отказывается что-либо объяснять. "Я хотел бы торт, достойный моего рода. Что-нибудь прекрасное и величественное." (exit "bakeryuni,7,8")
 }
 """
 
@@ -17364,7 +17364,7 @@ DLG SPR_2m
 В кладовой вы находите отсек для могущественных клиентов из других миров. На выбор есть две основы для торта: светлая и тёмная. Что выберете?
 {choice
 	- Светлая
-	  Вы выбираете светлую основа. {light = 1} {step1 = 1}
+	  Вы выбираете светлую основу. {light = 1} {step1 = 1}
 	- Тёмная
 	  Вы выбираете тёмную основу. {dark = 1} {step1 = 1}
 }
@@ -17384,9 +17384,9 @@ DLG SPR_2n
   - step2 == 0 ?
 Вы можете выбрать особые ингредиенты для торта. Этот выбор буквально решит судьбу мира.
 {choice
-	- Добавить лёгкие и воздушные ингредиенты
+	- Лёгкие и воздушные
 	  Вы добавляете чистые и светлые ингредиенты, надеясь, что ему понравится. {laccent = 1} {step2 = 1}
-	- Добавить мрачные и плотные ингредиенты
+	- Мрачные и плотные
 	  Вы добавляете мрачные ингредиенты, надеясь усилить свой торт. {daccent = 1}{step2 = 1}
 }
   - else ?
@@ -17403,20 +17403,20 @@ DLG SPR_2o
 Вы уже испекли торт.
   - step2 == 1 ?
 {  - light == 1 ?
-Your cake is finished! You made 
+Ваш торт готов! Вы сделали 
 {
   - laccent == 1 ?
-an Angel Food cake.{angel = 1}{step3 = 1}
+ангельский торт.{angel = 1}{step3 = 1}
   - daccent == 1 ?
-a black and white layer cake. It combines both light and dark powers.{layer = 1}{step3 = 1}
+чёрно-белый торт. Здесь сочетаются силы света и тьмы.{layer = 1}{step3 = 1}
 }
    - dark == 1 ?
-Your cake is finished! You made 
+Ваш торт готов! Вы сделали 
 {
   - daccent == 1 ?
-a Devil's Food cake.{devil = 1}{step3 = 1}
+демонический торт.{devil = 1}{step3 = 1}
   - laccent == 1 ?
-a black and white layer cake. It combines both light and dark powers.{layer = 1}{step3 = 1}
+чёрно-белый торт. Здесь сочетаются силы света и тьмы.{layer = 1}{step3 = 1}
 }
 """
 
@@ -17435,13 +17435,13 @@ DLG SPR_2q
 """
 {
   - angel == 1 ?
-    You give the great Xzagaroth, destroyer of worlds a slice of Angel Food cake.(exit "xzagaroth2,3,12")
+    Вы протягиваете Ксагароту ангельский торт.(exit "xzagaroth2,3,12")
   - devil == 1 ?
-    You give the great Xzagaroth, destroyer of worlds a slice of Devil's Food cake.(exit "xzagaroth2,3,12")
+    Вы протягиваете Ксагароту демонический торт.(exit "xzagaroth2,3,12")
   - layer == 1 ?
-    You give the great Xzagaroth, destroyer of worlds a slice of chocolate and vanilla layer cake.(exit "xzagaroth2,3,12")
+    Вы протягиваете Ксагароту чёрно-белый торт.(exit "xzagaroth2,3,12")
   - else ?
-Lord Xzagaroth has nothing more to say to you.
+Лорду Ксагароту больше нечего вам сказать.
 }
 """
 
@@ -17449,11 +17449,11 @@ DLG SPR_2r
 """
 {
   - angel == 1 ?
-He looks down on your cake with disdain. He takes a cautious bite. "So you thought you could sway me with a cake like this? It has no substance, no power!"{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "badend,3,12")
+Он презрением смотрит на торт и осторожно откусывает. "Думала сможешь переманить меня на светлую сторону? Ахаха! В нём нет силы."{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "badend,3,12")
   - devil == 1 ?
-He looks down on your cake with disdain. He takes a cautious bite. "So you thought you could sway me with a cake like this? It only feeds my destructive intent."{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "badend,3,12")
+Он с презрением смотрит на торт и откусывает кусочек. "Думала сможешь меня склонить на свою сторону? От его вкуса мне хочется всё разрушить".{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "badend,3,12")
   - layer == 1 ?
-He looks down on your cake with disdain. He takes a cautious bite. "So you thought you could sway me with a cake like- Wait a minute... Is this... A perfect balance of light and dark power? I've never seen anything like this... Not in any of the galaxies I've destroyed." He starts eating with gusto. "This is delicious. Maybe I'll leave this planet alone for now. He leaves with a thoughtful expression.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "goodend,3,12")
+Он с презрением смотрит на торт и откусывает кусочек. "Думала сможешь склонить меня на свою сторону... Стоп... Это... Идеальное сочетание светлой и тёмной силы? Я никогда не видел ничего подобного... Ни в одном другом мире, который я разрушил.". Он начинает есть с удовольствием. "Восхитительно! Невероятно! Возможно, я оставлю этот мир в покое". Он уходит.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "goodend,3,12")
 }
 """
 
@@ -17461,11 +17461,11 @@ DLG SPR_2s
 """
 {
   - angel == 1 ?
-He looks down on your cake with disdain. He takes a cautious bite. "So you thought you could sway me with a cake like this? It has no substance, no power!"{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "badend,3,12")
+Он презрением смотрит на торт и осторожно откусывает. "Думала сможешь переманить меня на светлую сторону? Ахаха! В нём нет силы."{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "badend,3,12")
   - devil == 1 ?
-He looks down on your cake with disdain. He takes a cautious bite. "So you thought you could sway me with a cake like this? It only feeds my destructive intent."{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "badend,3,12")
+Он с презрением смотрит на торт и откусывает кусочек. "Думала сможешь меня склонить на свою сторону? От его вкуса мне хочется всё разрушить".{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "badend,3,12")
   - layer == 1 ?
-He looks down on your cake with disdain. He takes a cautious bite. "So you thought you could sway me with a cake like- Wait a minute... Is this... A perfect balance of light and dark power? I've never seen anything like this... Not in any of the galaxies I've destroyed." He starts eating with gusto. "This is delicious. Maybe I'll leave this planet alone for now. He leaves with a thoughtful expression.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "goodend,3,12")
+Он с презрением смотрит на торт и откусывает кусочек. "Думала сможешь склонить меня на свою сторону... Стоп... Это... Идеальное сочетание светлой и тёмной силы? Я никогда не видел ничего подобного... Ни в одном другом мире, который я разрушил.". Он начинает есть с удовольствием. "Восхитительно! Невероятно! Возможно, я оставлю этот мир в покое". Он уходит.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "goodend,3,12")
 }
 """
 
@@ -17473,11 +17473,11 @@ DLG SPR_2t
 """
 {
   - angel == 1 ?
-He looks down on your cake with disdain. He takes a cautious bite. "So you thought you could sway me with a cake like this? It has no substance, no power!"{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "badend,3,12")
+Он презрением смотрит на торт и осторожно откусывает. "Думала сможешь переманить меня на светлую сторону? Ахаха! В нём нет силы."{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "badend,3,12")
   - devil == 1 ?
-He looks down on your cake with disdain. He takes a cautious bite. "So you thought you could sway me with a cake like this? It only feeds my destructive intent."{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "badend,3,12")
+Он с презрением смотрит на торт и откусывает кусочек. "Думала сможешь меня склонить на свою сторону? От его вкуса мне хочется всё разрушить".{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "badend,3,12")
   - layer == 1 ?
-He looks down on your cake with disdain. He takes a cautious bite. "So you thought you could sway me with a cake like- Wait a minute... Is this... A perfect balance of light and dark power? I've never seen anything like this... Not in any of the galaxies I've destroyed." He starts eating with gusto. "This is delicious. Maybe I'll leave this planet alone for now. He leaves with a thoughtful expression.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "goodend,3,12")
+Он с презрением смотрит на торт и откусывает кусочек. "Думала сможешь склонить меня на свою сторону... Стоп... Это... Идеальное сочетание светлой и тёмной силы? Я никогда не видел ничего подобного... Ни в одном другом мире, который я разрушил.". Он начинает есть с удовольствием. "Восхитительно! Невероятно! Возможно, я оставлю этот мир в покое". Он уходит.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "goodend,3,12")
 }
 """
 
@@ -17485,11 +17485,11 @@ DLG SPR_2u
 """
 {
   - angel == 1 ?
-He looks down on your cake with disdain. He takes a cautious bite. "So you thought you could sway me with a cake like this? It has no substance, no power!"{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "badend,3,12")
+Он презрением смотрит на торт и осторожно откусывает. "Думала сможешь переманить меня на светлую сторону? Ахаха! В нём нет силы."{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "badend,3,12")
   - devil == 1 ?
-He looks down on your cake with disdain. He takes a cautious bite. "So you thought you could sway me with a cake like this? It only feeds my destructive intent."{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "badend,3,12")
+Он с презрением смотрит на торт и откусывает кусочек. "Думала сможешь меня склонить на свою сторону? От его вкуса мне хочется всё разрушить".{score = score + 1}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "badend,3,12")
   - layer == 1 ?
-He looks down on your cake with disdain. He takes a cautious bite. "So you thought you could sway me with a cake like- Wait a minute... Is this... A perfect balance of light and dark power? I've never seen anything like this... Not in any of the galaxies I've destroyed." He starts eating with gusto. "This is delicious. Maybe I'll leave this planet alone for now. He leaves with a thoughtful expression.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "goodend,3,12")
+Он с презрением смотрит на торт и откусывает кусочек. "Думала сможешь склонить меня на свою сторону... Стоп... Это... Идеальное сочетание светлой и тёмной силы? Я никогда не видел ничего подобного... Ни в одном другом мире, который я разрушил.". Он начинает есть с удовольствием. "Восхитительно! Невероятно! Возможно, я оставлю этот мир в покое". Он уходит.{score = score + 3}{step1 = 0}{step2 = 0}{step3 = 0}{light = 0}{dark = 0}{laccent = 0}{daccent = 0}{angel = 0}{devil = 0}{layer = 0}(exit "goodend,3,12")
 }
 """
 
@@ -17497,21 +17497,21 @@ DLG SPR_2v
 """
 {
   - pgc == 1 ?
-The ghost excitedly eats the cake. He writes something on the back of his 'Boo!' sign. It says 9/10. He floats happily out of the bakery. Your next customer arrives. 
+Призрак с восторгом ест торт. Он что-то пишет на обратной стороне таблички. Призрак показывается 9/10. Радостно он выходит из пекарни. Заходит следующий клиент. 
  {score = 2}{step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}(exit "xzagaroth,3,12")
 {
   - frog == 1 ?
-The frog croaks anxiously. He can sense something coming.}
+Лягушка встревоженно квакает.}
   - hgc == 1 ?
-The ghost loves the cake. He draws something on the back of his 'Boo!' sign. It's a heart. He floats happily out of the bakery. Your next customer arrives. 
+Призрак в восторге. На обратной стороне он рисует сердечко и показывает вам. Радостно он выходит из пекарни. Заходит следующий клиент. 
  {score = 3}{step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}(exit "xzagaroth,3,12")
   - frog == 1 ?
-The frog croaks anxiously. He can sense something coming.}
+Лягушка встревоженно квакает.}
   - ssgc == 1 ?
-The ghost looks at the cake and then back at you. And then back at the cake. It's started smoking again. He seems unhappy and starts haunting the bakery. He's still sulking when your next customer arrives. 
+Призрак смотрит на торт. Потом на вас. Потом снова на торт. Он дуется и уходит. Приходит следующий клиент.
  {score = 1}{step1 = 0}{step2 = 0}{step3 = 0}{packet = 0}{kill = 0}{hammer = 0}{flamethrower = 0}{pgc = 0}{hgc = 0}{ssgc = 0}{ghost = 1}(exit "xzagaroth,3,12")
   - frog == 1 ?
-The frog croaks anxiously. He can sense something coming.}
+Лягушка встревоженно квакает.}
 }
 """
 
