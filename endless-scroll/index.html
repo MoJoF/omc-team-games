@@ -51616,7 +51616,15 @@ exports.hackOptions = hackOptions;
 <body onload='startExportedGame()'>
 <!-- GAME CANVAS -->
 <canvas id='game'></canvas>
-
+<script>
+function unmute() {
+    document.getElementById("bg").play();
+    document.removeEventListener('pointerup', unmute);
+    document.removeEventListener('keydown', unmute);
+}
+document.addEventListener('pointerup', unmute);
+document.addEventListener('keydown', unmute);
+</script>
 
 </body>
 
